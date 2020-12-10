@@ -28,30 +28,44 @@
   <div class="container-fluid">
 
     <div class="row">
-      <div class= "bordercol-12 col-md-8 col-lg-12">
+      <div class= "col-12 col-md-12 col-lg-12">
         <!-- ****************************************  aqui logo ***************************************************************-->
         <div class="container">
           <div class="row">
-           <div class="navbar">
-            <a class="navbar-brand" href="#">
-              <img src="/images/nav/devlogo-pwa-512.png" width="70" height="50" class="d-inline-block align-top" alt=""> 
-            </a> 
-            <span class=""> Write a new post </span> 
-           </div>
+           <div class="navbar col-12 col-md-12 col-lg-12 border border-danger">
+             <div class="nav-post" class="d-flex col-4 col-md-8 col-lg-6">
+              <a class="navbar-brand" href="#">
+                <img src="/images/nav/devlogo-pwa-512.png" width="70" height="50" class="d-inline-block align-top" alt=""> 
+              </a> 
+              <span class="writepost alin-center"> Write a new post </span> 
 
+             </div>
            
-            <div class="">
-              <span type="button" class="btn btn-light"> Edit </span>
-              <span type="button" class="btn btn-light"> Preview </span>
-              <span type="button" class="btn btn-light"> X </span>
+
+            <div class="d-flex col-4 col-md-8 col-lg-1">
+            <button type="button" class="btn btn-light mr-2"> Edit </button>
+            <button type="button" class="btn btn-light mr-2"> Preview </button>
             </div>
+
+            <div class="d-flex col-4 col-md-8 col-lg-3">
+              <button type="button" class="btn btn-light mr-2"> X </button>
+
+            </div>
+
+
+            
+
+            
+           </div>
+           
+           
          
   
           </div>
 
 
 
-            <!-- ****************************************  aqui empieza botones NAV  ***************************************************************-->
+            <!-- ****************************************  aqui termina botones NAV  ***************************************************************-->
          
   
          
@@ -84,45 +98,45 @@
                 <form action="">
                   <div>
   
-                    <button type="button" class="btn btn-outline-secondary mt-5">Add a cover image</button>
+                    <button type="button" class="col-3  btn btn-outline-secondary mt-5 ml-4 mr-4">Add a cover image</button>
                   
                
                   </div>
 
                   <div class="form-group">
                     <label for=""></label>
-                    <input type="text" class="form-control form-control-lg border-0" name="username"
+                    <input type="text" class="userwrite col-10  d-flex  form-control form-control-lg border" name="username"
                     placeholder="¿Quién está escribiendo?">
                   </div>
   
              
                   <div class="form-group">
                     <label for=""></label>
-                    <textarea class="form-control" name="title"
+                    <textarea class="d-flex p-2 form-control border-0" name="title"
                     placeholder="New post title here"></textarea>
                   </div>
   
                   <div class="form-group">
                     <label for=""></label>
-                    <input type="text" class="form-control" name="tags"
+                    <input type="text" class="form-control border-0" name="tags"
                     placeholder="Add up to 4 tags...">
                   </div>
   
                   <div class="form-group bg-light">
                     <label for=""></label>
-                    <input type="text" class="form-control" name="URL"
+                    <input type="text" class="form-control border-0" name="URL"
                     placeholder="Introduce una URL">
                   </div>
   
                   <div class="form-group">
                     <label for=""></label>
-                    <textarea class="form-control" name="content"
+                    <textarea class="form-control border-0" name="content"
                     placeholder="Write your post content here..."></textarea>
                   </div>
 
 
                   <div class="input-date mb-5">
-                    <input type="date" class="form-control" name="datetime">
+                    <input type="date" class="form-control border-0" name="datetime">
                     
                   </div>
       
