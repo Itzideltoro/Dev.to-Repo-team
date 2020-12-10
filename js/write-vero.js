@@ -1,24 +1,26 @@
-let newItem = {}
-let endpointURL = "https://desafio-esp-js-default-rtdb.firebaseio.com/post/.json"
+//------------------------------------------Codigo para Write-Post------------------------------------------------
+let newPost = {}
+let endpointPostData = "https://desafio-esp-js-default-rtdb.firebaseio.com/post/.json"
 
-//Listener de Inputs Agregar Nuevo Producto
+//--------Funciones para agregar un nuevo Post------------
+//Listener de Inputs del Formulario
 $("input, select, textarea").change(event => {
     let property = event.target.name
     let value = event.target.value
-    newItem[property] = value
-    console.log(newItem)
+    newPost[property] = value
+    console.log(newPost)
 })
 
-//Listener de Boton Agregar Nuevo Producto
+//Listener de Boton Publicar
 $(".btn-publish").click(() => {
-    postAjax(newItem)
-    // $("#addProduct").modal("hide")
+    postAjax(newPost)
+    newPost = {}
 })
 
-//Request de CUD a AJAX
+//Request de POST   *****Cambiara al unir con main (hacer mi funcion all in one)
 const postAjax = (theEntry) => {
     $.ajax({
-        url: endpointURL,
+        url: endpointPostData,
         method: "POST",
         data: JSON.stringify(theEntry),
         success: data => {
@@ -27,3 +29,29 @@ const postAjax = (theEntry) => {
         error: "",
     });
 }
+
+//--------Funciones para mostrar el Preview------------
+//Llenado de datos en el Preview
+const fillPreviewData = () => {
+    let { title, username, date, tags, content, URL } = newPost
+    $(".preview h1").text(title)
+    $(".preview .p-user").text(username)
+    $(".preview .p-date").text(date)
+    $(".preview .p-tags").text(tags)
+    $(".preview .p-post").text(content)
+    $(".preview img").attr("src", URL)
+}
+
+//Listener de Boton Preview
+$(".btn-preview").click(() => {
+    $(".form-view").hide()
+    $(".preview").show()
+    fillPreviewData()
+})
+
+//Listener de Boton Edit
+$(".btn-edit").click(() => {
+    $(".form-view").show()
+    $(".preview").hide()
+})
+//------------------------------------------Fin del Codigo para Write-Post------------------------------------------------

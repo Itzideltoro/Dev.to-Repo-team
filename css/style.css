@@ -427,6 +427,10 @@ a:hover {
   position: relative;
 }
 
+.nav-top .writepost {
+  background-color: #3b49df;
+}
+
 .nav-top .fa-dev {
   font-size: 45px;
   color: black;
