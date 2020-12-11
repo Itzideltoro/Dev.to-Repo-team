@@ -423,6 +423,11 @@ a:hover {
   margin-bottom: 30px;
 }
 
+.posta > button {
+  margin-bottom: 60px;
+  color: #363d44;
+}
+
 .nav-top {
   position: relative;
 }
@@ -1107,8 +1112,9 @@ nav .btnnav .btn-nav1 {
   margin-left: 40px;
 }
 
-.listaTags > a {
-  margin-bottom: 20px;
+.posta > button {
+  margin-bottom: 60px;
+  color: #808080;
 }
 
 .imag-user2w {
