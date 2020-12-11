@@ -19,95 +19,96 @@
   <!--**********************************************************************************************************************************************************************-->
                     <!--***********AQUI INICIA NAV junto con INPUT ***************************************************************************************************-->
                     <!--**********************************************************************************************************************************************************************-->
-  <div class="container-fluid"> 
-   
-
+  <div class="container-fluid">
     <div class="row">
-      <div class= "col-12 col-md-12 col-lg-12">
+      
         <!-- ****************************************  aqui logo ***************************************************************-->
-        <div class="container-fluid">
+        <div class="container">
+         
           <div class="row">
 
-            <a class="navbar-brand" href="/index.html">
-           <div class="navbar">
-            <a class="navbar-brand" href="#">
-              <img src="/images/nav/devlogo-pwa-512.png" width="70" height="50" class="d-inline-block align-top" alt=""
-                loading="lazy">
-            </a>
-            <span class=""> Write a new post </span>
-          </div>
-          <!-- ****************************************  aqui empieza botones NAV  ***************************************************************-->
-          <div class="row">
-            <div class="btnnav d-flex flex-row">
-              <button type="button" class="btn btn-light btn-edit"> Edit </button>
-              <button type="button" class="btn btn-light btn-preview"> Preview </button>
-              <a href="/index.html" class="btn btn-light btn-exit">X</a>
+              <div class="border">
+                <a class="navbar-brand" href="">
+                  <img src="/images/dev-badge.svg" width="70" height="50" class="d-inline-block align-top" alt=""
+                    loading="lazy">
+                </a>
+                <span class=""> Write a new post </span>
+              </div>
+            
             </div>
-          </div>
+
+            <div class="row">
+
+              <div class="btnnav border">
+                <button type="buttonav" class="btn btn-light btn-edit"> Edit </button>
+                <button type="buttonav" class="btn btn-light btn-preview"> Preview </button>
+                <a href="/index.html" class="btn btn-light btn-exit">X</a>
+              </div>
+            </div>
+
+            
+    
+          
+          <!-- ****************************************  aqui termina botones NAV  ***************************************************************-->
+          
+        </div> 
         </div>
       </div>
+     
+     
       <div class="container">
         <div class="row">
           <div class="container">
-            <div class="border border-secundary rounded bg-light  mb-3  col-12 col-md-8 col-lg-10 ">
+            <div class="border border-secundary rounded bg-light  mb-4  col-12 col-md-8 col-lg-10 ">
               <!-- ****************************************  aqui empieza el input ***************************************************************-->
-              <div class="list-form-group form-view">
+              <div class="list-form-group form-view ml-4">
                 <form>
                   <div>
-                    <button type="button" class="btn btn-outline-secondary mt-5">Add a cover image</button>
+                    <button type="button" class="ibtn btn btn-outline-secondary mt-5">Add a cover image</button>
                   </div>
                   <div class="form-group">
                     <label for=""></label>
-                    <input type="text" class="form-control form-control-lg border-0" name="username"
-                      placeholder="¿Quién está escribiendo?">
+                     <textarea rows="1" class="itexta form-control border-0" ref="Default" name="title"
+                      placeholder="New post title here"></textarea>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for=""></label>
+                    <textarea rows="1" class="input-whos form-control border-0" name="username"
+                      placeholder="Who's writting?"></textarea>
                   </div>
                   <div class="form-group">
                     <label for=""></label>
-                    <textarea class="form-control" name="title" placeholder="New post title here"></textarea>
-                  </div>
-                  <div class="form-group">
-                    <label for=""></label>
-                    <input type="text" class="form-control" name="tags" placeholder="Add up to 4 tags...">
+                    <input type="text" class="itag form-control border-0" name="tags" 
+                    placeholder="Add up to 4 tags...">
                   </div>
                   <div class="form-group bg-light">
                     <label for=""></label>
-                    <input type="text" class="form-control" name="URL" placeholder="Introduce una URL">
+                    <input type="text" class="iURL form-control border-0" name="URL" 
+                    placeholder="Introduce una imagén a través de una URL">
                   </div>
+
+                  <div class="input-date mb-5">
+                    <input type="date" class="idate form-control border-0" name="datetime">
+                  </div>
+
                   <div class="form-group">
                     <label for=""></label>
-                    <textarea class="form-control" name="content"
+                    <textarea rows="5" class="icontent form-control border-0" name="content"
                       placeholder="Write your post content here..."></textarea>
                   </div>
-                  <div class="input-date mb-5">
-                    <input type="date" class="form-control" name="datetime">
-                  </div>
+                
                 </form>
               </div>
               <!-- ****************************************  aqui empieza el preview ***************************************************************-->
-              <div class="preview">
-                <img src="" alt="">
-                <h1></h1>
-                <p class="p-user"></p>
-                <p class="p-date"></p>
-                <p class="p-tags"></p>
-                <p class="p-post"></p>
-              </div>
+             
               <!-- ****************************************aqui termina el apartado de preview y edit***************************************************************-->
             </div>
           </div>
         </div>
       </div>
       <!-- ****************************************  aqui empieza FOOTER ***************************************************************-->
-      <div class="container">
-        <div class="row">
-          <div class="d-flex col-12 col-md-8 col-lg-10 ">
-            <button type="button"
-              class="btn btn-primary shadow-none font-weight-bold mx-2 text-nowrap d-none d-md-block btn-publish">Publish
-            </button>
-            <button type="button" class="botonsave btn btn-outline-secondary ">Save Draft</button>
-          </div>
-        </div>
-      </div>
+     
     </div>
   </div>
   <!-- ****************************************  aqui van los scripts de bootstrap y js***************************************************************-->
