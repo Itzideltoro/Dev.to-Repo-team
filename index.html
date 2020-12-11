@@ -115,7 +115,7 @@
                                                         </div>
                                                     </a>
                                                 </div>
-                                               <div class="imgh mb-4 pd-4">
+                                                <div class="imgh mb-4 pd-4">
                                                     <a class="htext hover d-flex">
                                                         <img class="imag-user2 img-fluid rounded-circle mr-3"
                                                             src="https://i.picsum.photos/id/1006/3000/2000.jpg?hmac=x83pQQ7LW1UTo8HxBcIWuRIVeN_uCg0cG6keXvNvM8g"
@@ -158,7 +158,7 @@
         <!--***********AQUI INICIA EL NAV***************************************************************************************************-->
         <!--**********************************************************************************************************************************************************************-->
         <nav class="navbar fixed-top navbar-light bg-light shadow-sm p-1 mb-5 bg-white rounded">
-            <div class="container nav-top">
+            <div class="container nav-top d-flex flex-nowrap">
                 <a class="navbar-brand" href="#">
                     <i class="pl-1 fab fa-dev" title="dev"></i>
                 </a>
@@ -197,7 +197,7 @@
         </nav>
         <!--***********AQUI TERMINA EL NAV***************************************************************************************************-->
         <!--***********AQUI INICIA EL CONTAINER PRICIPAL***************************************************************************************************-->
-        <div class="container-fluid mt-4" id="mainbg">
+        <div class="container-fluid mt-2" id="mainbg">
             <div class="row">
                 <div class="container">
                     <div class="row">
@@ -296,418 +296,421 @@
                             <section>
                                 <div class="container">
                                     <div class="row">
-                                        <div class="col-3">
-                                            <h4 class="h4i">
-                                                Posts
-                                            </h4>
-
+                                        <div class="col-3 d-flex align-items-center">
+                                            <h4 class="h4i">Post</h4>
                                         </div>
-                                        <div class="col-9">
-                                            <div>
-                                                <ul class="navinternoi d-flex flex-row justify-content-between filters">
+                                        <div class="col-9 d-flex flex-row justify-content-end align-items-center d-md-block">
+                                            <div class="d-none d-md-block">
+                                                <ul class="navinternoi d-flex flex-row justify-content-between align-items-center filters">
                                                     <li>Feed</li>
                                                     <li>Week</li>
                                                     <li>Month</li>
                                                     <li>Year</li>
                                                     <li>Infinity</li>
-                                                    <li>Recent</li>
+                                                    <li>Latest</li>
                                                 </ul>
                                             </div>
-
+                                            <div class="form-group filters d-md-none w-50">
+                                                <select class="form-control">
+                                                    <option value="Feed" selected>Feed</option>
+                                                    <option value="Week">Week</option>
+                                                    <option value="Month">Month</option>
+                                                    <option value="Year">Year</option>
+                                                    <option value="Infinity">Infinity</option>
+                                                    <option value="Latest">Latest</option>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
-
                                 </div>
+                    </section>
 
-                            </section>
-
-                            <div class="container-cards">
-                                <!-- aqui empieza la card principal -->
-                                <!-- aqui empieza la imagen principal -->
-                                <section class="card rounded main-noticia">
-                                    <div class="class">
-                                        <img class="img-fluid"
-                                            src="https://res.cloudinary.com/practicaldev/image/fetch/s--8sgsxyNk--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/h4oufz64ebx6xtl7z9ov.png"
-                                            alt="" />
+                    <div class="container-cards">
+                        <!-- aqui empieza la card principal -->
+                        <!-- aqui empieza la imagen principal -->
+                        <section class="card rounded main-noticia">
+                            <div class="class">
+                                <img class="img-fluid"
+                                    src="https://res.cloudinary.com/practicaldev/image/fetch/s--8sgsxyNk--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/h4oufz64ebx6xtl7z9ov.png"
+                                    alt="" />
+                            </div>
+                            <!-- aqui termina la magen principal -->
+                            <!-- aqui empieza el usuario e imagen de usuario, nombre y fecha -->
+                            <div class="container bg-white">
+                                <div class="row">
+                                    <div class="col mt-3">
+                                        <a class="htext hover d-flex">
+                                            <img class="imag-user3 img-fluid rounded-circle" src="" alt="" />
+                                            <div class="etimain mb-1 ml-2">
+                                                <h6 class="eti4 mb-0">${username}</h6>
+                                                <span class="eti3">${datetime}</span>
+                                            </div>
+                                        </a>
                                     </div>
-                                    <!-- aqui termina la magen principal -->
-                                    <!-- aqui empieza el usuario e imagen de usuario, nombre y fecha -->
-                                    <div class="container bg-white">
+                                </div>
+                                <!-- aqui termina el usuario e imagen de usuario, nombre y fecha -->
+                                <!-- aqui empieza la parte media card principal -->
+                                <div class="row">
+                                    <div class="container">
                                         <div class="row">
-                                            <div class="col mt-3">
-                                                <a class="htext hover d-flex">
-                                                    <img class="imag-user3 img-fluid rounded-circle" src="" alt="" />
-                                                    <div class="etimain mb-1 ml-2">
-                                                        <h6 class="eti4 mb-0">${username}</h6>
-                                                        <span class="eti3">${datetime}</span>
+                                            <div class="col mb-3">
+                                                <a class="etimain hover d-flex">
+                                                    <div class=" mb-1">
+                                                        <h2 class="eti4 margn1">${title}</h2>
                                                     </div>
                                                 </a>
-                                            </div>
-                                        </div>
-                                        <!-- aqui termina el usuario e imagen de usuario, nombre y fecha -->
-                                        <!-- aqui empieza la parte media card principal -->
-                                        <div class="row">
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col mb-3">
-                                                        <a class="etimain hover d-flex">
-                                                            <div class=" mb-1">
-                                                                <h2 class="eti4 margn1">${title}</h2>
-                                                            </div>
-                                                        </a>
-                                                        <div class="etimain margn1">
-                                                            <a class="eti1 pr-2 rounded mr-1" href="#">${tag[0]}</a>
-                                                            <a class="eti2 pr-2 rounded mr-1" href="#">${tag[1]}</a>
-                                                            <a class="eti3 pr-2 rounded" href="#">${tag[2]}</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- aqui termina la parte media card principal -->
-                                        <!-- aqui empieza el footer card principal -->
-                                        <div class="container ml-4">
-                                            <div class="row">
-                                                <div class="container botonesm1 d-flex mr-4 mb-3">
-                                                    <div class="col-6 p-0">
-                                                        <button type="button"
-                                                            class="margin1 boton1 mr-2 btn btn-light">12
-                                                            reactions</button>
-                                                        <button type="button" class="margin1 boton1 btn btn-light ">3
-                                                            comments</button>
-                                                    </div>
-                                                    <div class="col-6 d-flex justify-content-end p-0">
-                                                        <div>
-                                                            <span class="h6i mr-2 align-middle">15 min read</span>
-                                                        </div>
-                                                        <button type="button"
-                                                            class="botonsave btn btn-outline-secondary" data-entry-key=${key}>Save</button>
-                                                    </div>
+                                                <div class="etimain margn1">
+                                                    <a class="eti1 pr-2 rounded mr-1" href="#">${tag[0]}</a>
+                                                    <a class="eti2 pr-2 rounded mr-1" href="#">${tag[1]}</a>
+                                                    <a class="eti3 pr-2 rounded" href="#">${tag[2]}</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </section>
-                                <!-- aqui termina el footer de card principal -->
-                                <!-- ****************************************  aqui termina la card principal ***************************************************************-->
-                            </div>
-
-                        </main>
-
-
-
-                        <!--**********************************************************************************************************************************************************************-->
-                        <!--***********AQUI TERMINA EL MAIN  LINEA 701***************************************************************************************************-->
-                        <!--***********AQUI INICIA EL ASIDE2***************************************************************************************************-->
-                        <!--**********************************************************************************************************************************************************************-->
-                        <aside class="col-0 col-md-0 col-lg-3 d-none d-lg-block">
-                            <aside>
-                                <aside>
-                                    <div class="row devlayout">
-                                        <div class="card">
-                                            <header class="listings-header">
-                                                <h3 class="crayons-subtitle-2">Listings</h3>
-                                                <div class="card-actions"> <a href="#" class="texto-link">See all</a>
-                                                </div>
-                                            </header>
-
-                                            <a class="crayons-link crayons-link--contentful" href="/post.html">
-
+                                </div>
+                                <!-- aqui termina la parte media card principal -->
+                                <!-- aqui empieza el footer card principal -->
+                                <div class="container ml-4">
+                                    <div class="row">
+                                        <div class="container botonesm1 d-flex mr-4 mb-3">
+                                            <div class="col-6 p-0">
+                                                <button type="button" class="margin1 boton1 mr-2 btn btn-light">12
+                                                    reactions</button>
+                                                <button type="button" class="margin1 boton1 btn btn-light ">3
+                                                    comments</button>
+                                            </div>
+                                            <div class="col-6 d-flex justify-content-end p-0">
                                                 <div>
-                                                    PE offers limited scholarships from 1k to 4k for diversity and
-                                                    financial hardship
+                                                    <span class="h6i mr-2 align-middle">15 min read</span>
                                                 </div>
-                                                <div class="crayons-link-contentful crayons-link__secondary">
-                                                    education
-                                                </div>
-                                            </a>
-
-                                            <a class="crayons-link crayons-link--contentful" href="/post.html">
-
-                                                <div>
-                                                    Learn more than just 'coding.' Learn the entire design process:
-                                                </div>
-                                                <div class="crayons-link-contentful crayons-link__secondary">
-                                                    education
-                                                </div>
-                                            </a>
-
-                                            <a class="crayons-link crayons-link--contentful" href="/post.html">
-
-                                                <div>
-                                                    Fcal - Open source cross platform calculator for programmers
-                                                </div>
-                                                <div class="crayons-link-contentful crayons-link__secondary">
-                                                    collabs
-                                                </div>
-                                            </a>
-
-                                            <a class="crayons-link crayons-link--contentful" href="/post.html">
-
-                                                <div>
-                                                    Gun.io: Senior Software Engineer
-                                                </div>
-                                                <div class="crayons-link-contentful crayons-link__secondary">
-                                                    jobs
-                                                </div>
-                                            </a>
-
-                                            <a class="crayons-link crayons-link--contentful" href="/post.html">
-
-                                                <div>
-                                                    💡Free Clear Explanations of Fundamental Concepts in Software - in
-                                                    plain english with hand-drawn illustrations
-                                                </div>
-                                                <div class="crayons-link-contentful crayons-link__secondary">
-                                                    education
-                                                </div>
-                                            </a>
-
-                                            <header class="create-listing">
-                                                <!-- <h3 class="subtitle-2">Create a Listing</h3> -->
-                                                <div class="card-actions"> <a href="#" class="texto">Create a
-                                                        Listing</a></div>
-                                            </header>
+                                                <button type="button"
+                                                    class="botonsave btn btn-outline-secondary data-entry-key=${key}">Save</button>
+                                            </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- aqui termina el footer de card principal -->
+                        <!-- ****************************************  aqui termina la card principal ***************************************************************-->
+                    </div>
 
-                                        <!--                                 
+                    </main>
+
+
+
+                    <!--**********************************************************************************************************************************************************************-->
+                    <!--***********AQUI TERMINA EL MAIN  LINEA 701***************************************************************************************************-->
+                    <!--***********AQUI INICIA EL ASIDE2***************************************************************************************************-->
+                    <!--**********************************************************************************************************************************************************************-->
+                    <aside class="col-0 col-md-0 col-lg-3 d-none d-lg-block">
+                        <aside>
+                            <aside>
+                                <div class="row devlayout">
+                                    <div class="card">
+                                        <header class="listings-header">
+                                            <h3 class="crayons-subtitle-2">Listings</h3>
+                                            <div class="card-actions"> <a href="#" class="texto-link">See all</a>
+                                            </div>
+                                        </header>
+
+                                        <a class="crayons-link crayons-link--contentful" href="/post.html">
+
+                                            <div>
+                                                PE offers limited scholarships from 1k to 4k for diversity and
+                                                financial hardship
+                                            </div>
+                                            <div class="crayons-link-contentful crayons-link__secondary">
+                                                education
+                                            </div>
+                                        </a>
+
+                                        <a class="crayons-link crayons-link--contentful" href="/post.html">
+
+                                            <div>
+                                                Learn more than just 'coding.' Learn the entire design process:
+                                            </div>
+                                            <div class="crayons-link-contentful crayons-link__secondary">
+                                                education
+                                            </div>
+                                        </a>
+
+                                        <a class="crayons-link crayons-link--contentful" href="/post.html">
+
+                                            <div>
+                                                Fcal - Open source cross platform calculator for programmers
+                                            </div>
+                                            <div class="crayons-link-contentful crayons-link__secondary">
+                                                collabs
+                                            </div>
+                                        </a>
+
+                                        <a class="crayons-link crayons-link--contentful" href="/post.html">
+
+                                            <div>
+                                                Gun.io: Senior Software Engineer
+                                            </div>
+                                            <div class="crayons-link-contentful crayons-link__secondary">
+                                                jobs
+                                            </div>
+                                        </a>
+
+                                        <a class="crayons-link crayons-link--contentful" href="/post.html">
+
+                                            <div>
+                                                💡Free Clear Explanations of Fundamental Concepts in Software - in
+                                                plain english with hand-drawn illustrations
+                                            </div>
+                                            <div class="crayons-link-contentful crayons-link__secondary">
+                                                education
+                                            </div>
+                                        </a>
+
+                                        <header class="create-listing">
+                                            <!-- <h3 class="subtitle-2">Create a Listing</h3> -->
+                                            <div class="card-actions"> <a href="#" class="texto">Create a
+                                                    Listing</a></div>
+                                        </header>
+                                    </div>
+
+                                    <!--                                 
                                     section[class="crayons-card crayons-card--secondary"]*7>header[class=crayons-card__header]>h3[class=crayons-subtitle-2]>a[class=crayons-link href="./post.html"]{#news}^^div>a[class="crayons-link crayons-link--contentful" href="./post.html"]{news$}*5>div[class="crayons-link__secondary"]>span[class="crayons-indicator crayons-indicator--accent"]{New} -->
 
-                                        <section class="crayons-card crayons-card--secondary">
-                                            <header class="crayons-card__header">
-                                                <h3 class="crayons-subtitle-2"><a href="/post.html"
-                                                        class="crayons-link">#news</a></h3>
+                                    <section class="crayons-card crayons-card--secondary">
+                                        <header class="crayons-card__header">
+                                            <h3 class="crayons-subtitle-2"><a href="/post.html"
+                                                    class="crayons-link">#news</a></h3>
 
-                                            </header>
-                                            <div>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    S3-auto-sync - watch a folder and automatically sync it with an S3
-                                                    bucket
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-indicator crayons-indicator--accent">New</span>
-                                                    </div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    tsParticles 1.18.11 released
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-indicator crayons-indicator--accent">New</span>
-                                                    </div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Git Cheat sheet
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-indicator crayons-indicator--accent">New</span>
-                                                    </div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Open Source Project: Available for contribution
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">2 comments</span></div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    #codenovember - 6 - starry night - Made with tsParticles
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-indicator crayons-indicator--accent">New</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </section>
+                                        </header>
+                                        <div>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                S3-auto-sync - watch a folder and automatically sync it with an S3
+                                                bucket
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-indicator crayons-indicator--accent">New</span>
+                                                </div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                tsParticles 1.18.11 released
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-indicator crayons-indicator--accent">New</span>
+                                                </div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Git Cheat sheet
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-indicator crayons-indicator--accent">New</span>
+                                                </div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Open Source Project: Available for contribution
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">2 comments</span></div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                #codenovember - 6 - starry night - Made with tsParticles
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-indicator crayons-indicator--accent">New</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </section>
 
-                                        <section class="crayons-card crayons-card--secondary">
-                                            <header class="crayons-card__header">
-                                                <h3 class="crayons-subtitle-2"><a href="/post.html"
-                                                        class="crayons-link">#help</a></h3>
-                                            </header>
-                                            <div>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Why doesn't my custom canvas display when using the same Graphics
-                                                    context?
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-indicator crayons-indicator--accent">New</span>
-                                                    </div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Docker development
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">4 comments</span></div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Looking for Angular Architecture Advice
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">2 comments</span></div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Can you create "resources" in .jar files in Java?
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-indicator crayons-indicator--accent">New</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </section>
-                                        <section class="crayons-card crayons-card--secondary">
-                                            <header class="crayons-card__header">
-                                                <h3 class="crayons-subtitle-2"><a href="/post.html"
-                                                        class="crayons-link">#discuss</a></h3>
-                                            </header>
-                                            <div>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Certifications - worth it or waste?
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-indicator crayons-indicator--accent">New</span>
-                                                    </div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Have you ever code when you were high? 🥃🥴
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">12 comments</span></div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Your website sucks! And I'll tell you why (ROUND 2) ⚡⚡
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">29 comments</span></div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    What was your win this week?
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">30 comments</span></div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Introducing Quarkly - Instrument for React devs and designers, that
-                                                    will help you optimize your workflow
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-indicator crayons-indicator--accent">New</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </section>
-                                        <section class="crayons-card crayons-card--secondary">
-                                            <header class="crayons-card__header">
-                                                <h3 class="crayons-subtitle-2"><a href="./post.html"
-                                                        class="crayons-link">#explainlikeimfive</a></h3>
-                                            </header>
-                                            <div>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Is it worth using OOP in JS?
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">30 comments</span></div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Step by step for javascript: How do I start?
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">19 comments</span></div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    How to convert Adobe XD to React Native?
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">3 comments</span></div>
-                                                </a>
-                                            </div>
-                                        </section>
-                                        <section class="crayons-card crayons-card--secondary">
-                                            <header class="crayons-card__header">
-                                                <h3 class="crayons-subtitle-2"><a href="/post.html"
-                                                        class="crayons-link">#challenge</a></h3>
-                                            </header>
-                                            <div>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    My #100DOC - Day
-                                                    73&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-indicator crayons-indicator--accent">New</span>
-                                                    </div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    My #100DOC - Day 72
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-indicator crayons-indicator--accent">New</span>
-                                                    </div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    My #100DOC - Day 71
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-indicator crayons-indicator--accent">New</span>
-                                                    </div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    My #100DOC - Day 70
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-indicator crayons-indicator--accent">New</span>
-                                                    </div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    My #100DOC - Day 69
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-indicator crayons-indicator--accent">New</span>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </section>
-                                        <section class="crayons-card crayons-card--secondary">
-                                            <header class="crayons-card__header">
-                                                <h3 class="crayons-subtitle-2"><a href="/post.html"
-                                                        class="crayons-link">#meta</a></h3>
-                                            </header>
-                                            <div>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Have you ever contributed to DEV?
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">12 comments</span></div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Reddit In Comics Style
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">1 comments</span></div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    HoneyByte: Get a Taste for Sampling
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">2 comments</span></div>
-                                                </a>
-                                            </div>
-                                        </section>
-                                        <section class="crayons-card crayons-card--secondary">
-                                            <header class="crayons-card__header">
-                                                <h3 class="crayons-subtitle-2"><a href="/post.html"
-                                                        class="crayons-link">#watercooler</a></h3>
-                                            </header>
-                                            <div>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    4 ways to level up your life
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">7 comments</span></div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Have you ever code when you were high? 🥃🥴
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">12 comments</span></div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Do you Read your Reading List?
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">5 comments</span></div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Why I Quit my Full-Time Job to Learn to Code.
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">2 comments</span></div>
-                                                </a>
-                                                <a href="/post.html" class="crayons-link crayons-link--contentful">
-                                                    Which are the best programming lengajes to learn? 🖥️
-                                                    <div class="crayons-link__secondary"><span
-                                                            class="crayons-link__secondary">1 comments</span></div>
-                                                </a>
-                                            </div>
-                                        </section>
-                                    </div>
-                                </aside>
-
+                                    <section class="crayons-card crayons-card--secondary">
+                                        <header class="crayons-card__header">
+                                            <h3 class="crayons-subtitle-2"><a href="/post.html"
+                                                    class="crayons-link">#help</a></h3>
+                                        </header>
+                                        <div>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Why doesn't my custom canvas display when using the same Graphics
+                                                context?
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-indicator crayons-indicator--accent">New</span>
+                                                </div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Docker development
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">4 comments</span></div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Looking for Angular Architecture Advice
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">2 comments</span></div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Can you create "resources" in .jar files in Java?
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-indicator crayons-indicator--accent">New</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </section>
+                                    <section class="crayons-card crayons-card--secondary">
+                                        <header class="crayons-card__header">
+                                            <h3 class="crayons-subtitle-2"><a href="/post.html"
+                                                    class="crayons-link">#discuss</a></h3>
+                                        </header>
+                                        <div>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Certifications - worth it or waste?
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-indicator crayons-indicator--accent">New</span>
+                                                </div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Have you ever code when you were high? 🥃🥴
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">12 comments</span></div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Your website sucks! And I'll tell you why (ROUND 2) ⚡⚡
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">29 comments</span></div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                What was your win this week?
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">30 comments</span></div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Introducing Quarkly - Instrument for React devs and designers, that
+                                                will help you optimize your workflow
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-indicator crayons-indicator--accent">New</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </section>
+                                    <section class="crayons-card crayons-card--secondary">
+                                        <header class="crayons-card__header">
+                                            <h3 class="crayons-subtitle-2"><a href="./post.html"
+                                                    class="crayons-link">#explainlikeimfive</a></h3>
+                                        </header>
+                                        <div>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Is it worth using OOP in JS?
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">30 comments</span></div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Step by step for javascript: How do I start?
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">19 comments</span></div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                How to convert Adobe XD to React Native?
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">3 comments</span></div>
+                                            </a>
+                                        </div>
+                                    </section>
+                                    <section class="crayons-card crayons-card--secondary">
+                                        <header class="crayons-card__header">
+                                            <h3 class="crayons-subtitle-2"><a href="/post.html"
+                                                    class="crayons-link">#challenge</a></h3>
+                                        </header>
+                                        <div>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                My #100DOC - Day
+                                                73&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-indicator crayons-indicator--accent">New</span>
+                                                </div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                My #100DOC - Day 72
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-indicator crayons-indicator--accent">New</span>
+                                                </div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                My #100DOC - Day 71
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-indicator crayons-indicator--accent">New</span>
+                                                </div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                My #100DOC - Day 70
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-indicator crayons-indicator--accent">New</span>
+                                                </div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                My #100DOC - Day 69
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-indicator crayons-indicator--accent">New</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </section>
+                                    <section class="crayons-card crayons-card--secondary">
+                                        <header class="crayons-card__header">
+                                            <h3 class="crayons-subtitle-2"><a href="/post.html"
+                                                    class="crayons-link">#meta</a></h3>
+                                        </header>
+                                        <div>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Have you ever contributed to DEV?
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">12 comments</span></div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Reddit In Comics Style
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">1 comments</span></div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                HoneyByte: Get a Taste for Sampling
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">2 comments</span></div>
+                                            </a>
+                                        </div>
+                                    </section>
+                                    <section class="crayons-card crayons-card--secondary">
+                                        <header class="crayons-card__header">
+                                            <h3 class="crayons-subtitle-2"><a href="/post.html"
+                                                    class="crayons-link">#watercooler</a></h3>
+                                        </header>
+                                        <div>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                4 ways to level up your life
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">7 comments</span></div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Have you ever code when you were high? 🥃🥴
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">12 comments</span></div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Do you Read your Reading List?
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">5 comments</span></div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Why I Quit my Full-Time Job to Learn to Code.
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">2 comments</span></div>
+                                            </a>
+                                            <a href="/post.html" class="crayons-link crayons-link--contentful">
+                                                Which are the best programming lengajes to learn? 🖥️
+                                                <div class="crayons-link__secondary"><span
+                                                        class="crayons-link__secondary">1 comments</span></div>
+                                            </a>
+                                        </div>
+                                    </section>
+                                </div>
                             </aside>
-                        </aside>
 
-                        <!--***********AQUI TERMINA EL ASIDE2  LINEA 1013***************************************************************************************************-->
-                    </div>
+                        </aside>
+                    </aside>
+
+                    <!--***********AQUI TERMINA EL ASIDE2  LINEA 1013***************************************************************************************************-->
                 </div>
             </div>
+        </div>
         </div>
         <!--**********************************************************************************************************************************************************************-->
         <!--***********AQUI TERMINA EL CONTAINER PRICIPAL***************************************************************************************************-->

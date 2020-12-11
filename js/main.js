@@ -30,6 +30,32 @@ $(".filters li").click(event => {
     getTheJson(filter, minDate)
 })
 
+//Listener filtros de Barra Fechas en desplegable
+$(".filters select").change(event => {
+    filterActivated = true
+    let filter = event.target.value
+    let today = new Date()
+    let minDate = 0
+    switch (filter) {
+        case "Week":
+            minDate = today - 518400000
+            break
+        case "Month":
+            minDate = today - 2592000000
+            break
+        case "Year":
+            minDate = today - 31622400000
+            break
+        case "Infinity":
+            filterActivated = false
+            break
+        case "Feed":
+            filterActivated = false
+            break
+    }
+    getTheJson(filter, minDate)
+})
+
 //Listener Search
 $(".input-search").change(event => {
     let stringToFilter = event.target.value
