@@ -121,7 +121,7 @@ const fillDataByCriteria = (theJson, filter, criteria) => {
                                         <span class="h6i mr-2 align-middle">15 min read</span>
                                     </div>
                                     <button type="button"
-                                        class="botonsave btn btn-outline-secondary data-entry-key=${key}">Save</button>
+                                        class="botonsave btn btn-outline-secondary" data-entry-key=${key}>Save</button>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +205,7 @@ const fillDataToCards = (theJson,criteria) => {
                                         <span class="h6i mr-2 align-middle">15 min read</span>
                                     </div>
                                     <button type="button"
-                                        class="botonsave btn btn-outline-secondary data-entry-key=${key}">Save</button>
+                                        class="botonsave btn btn-outline-secondary" data-entry-key=${key}>Save</button>
                                 </div>
                             </div>
                         </div>
@@ -220,10 +220,38 @@ const fillDataToCards = (theJson,criteria) => {
     $(containerPost).html() === "" ? $(containerPost).html(`<p class="p-3 font-weight-bold w-100">No results match that query.</p>`) : addBtnListener()
 }
 
-//Listener para botones Save
-const addBtnListener = () => {
-    console.log("listener")
+const savePost = savedPosts => {
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           // Typical action to be performed when the document is ready:
+           //xhttp.responseText;
+           let response = JSON.parse(xhttp.response);
+           console.log(response)
+           /*getItems()*/
+        }
+    };
+    // xhttp.open("POST", "https://ajaxclass-1ca34.firebaseio.com/carlosv/koders/.json ",true);
+    xhttp.open("POST", "https://desafio-esp-js-default-rtdb.firebaseio.com/readinglist/.json ",true);
+    xhttp.send( JSON.stringify( savedPosts ) );
 }
+
+const addBtnListener = () => {
+    let buttons = document.querySelectorAll(".botonsave")
+    console.log(buttons)
+    buttons.forEach( button => {
+        button.addEventListener("click", event => {
+            console.log(event)
+            console.log(event.target)
+            console.log(event.target.dataset)
+            console.log(event.target.dataset.entryKey)
+        
+            let entryKey = event.target.dataset.entryKey
+            savePost(entryKey)
+        })
+    })
+}
+
 
 //Listener Search
 $(".input-search").change((event) => {

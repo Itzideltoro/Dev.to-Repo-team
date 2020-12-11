@@ -69,8 +69,29 @@
         <div class="container mb-5">
            <div class="row">
             <div class=" col- 12 md-4 col-lg-3 vh-nav">
-                <div>
+            
                     <h1 class="readingList" name="readinglist">Reading List</h1>
+                    <table class="table table-striped">
+                       <!-- <thead>
+                          <tr>
+                            <th scope="col">Title</th>
+                            <th scope="col">Username</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Tags</th>
+                            <th scope="col">&nbsp;</th>
+                          </tr>
+                        </thead>  -->
+                        <tbody id="posts-table">
+                          <tr>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                            <td>
+                              <div id="archive-button" class="btn btn-danger btn-archive" data-entry-key=${post}>Archive</div>
+                            </td>
+                          </tr>
+                      </tbody>
+                    </table>
+              
                 </div>
                 <div class="hashtag-list d-flex flex-column ">
                     <a>#javascript</a>
