@@ -184,7 +184,6 @@ const savePost = savedPosts => {
     xhttp.send( JSON.stringify( savedPosts ) );
 }
 const addBtnListener = () => {
-<<<<<<< HEAD
     let buttons = document.querySelectorAll(".botonsave")
     console.log(buttons)
     buttons.forEach( button => {
@@ -198,10 +197,8 @@ const addBtnListener = () => {
             savePost(entryKey)
         })
     })
-=======
-    addBtnListenerCards()
->>>>>>> 96f10772b20babff13ec1d5eeaae682b0297d737
 }
+    addBtnListenerCards()
 
 //--------------------------------------------INICIO FUNCIONALIDAD DE HTML POR POST--------------------------------------------
 //Listener del card seleccionado

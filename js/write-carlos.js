@@ -21,7 +21,7 @@ const printPosts = posts => {
                     <td>${datetime}</td>
                     <td>${tags}</td>
                     <td>
-                        <div id="archive-button" class="btn btn-danger btn-archive" data-entry-key=${post}>Archive</div>
+                        <div id="archive-button" class="btn btn-primary btn-archive" data-entry-key=${post}>Archive</div>
                     </td>
                 </tr>
             `
@@ -84,7 +84,6 @@ const savePost = posts => {
            getPosts()
         }
     };
-    // xhttp.open("POST", "https://ajaxclass-1ca34.firebaseio.com/carlosv/koders/.json ",true);
     xhttp.open("POST", "https://desafio-esp-js-default-rtdb.firebaseio.com/readinglist/.json ",true);
     xhttp.send( JSON.stringify( posts ) );
 }
@@ -101,7 +100,6 @@ const archivePost = entryKey => {
            getPosts()
         }
     };
-    // xhttp.open("DELETE", "https://ajaxclass-1ca34.firebaseio.com/carlosv/koders/.json ",true);
     xhttp.open("DELETE", `https://desafio-esp-js-default-rtdb.firebaseio.com/readinglist/${entryKey}/.json `,true);
     xhttp.send();
 }
