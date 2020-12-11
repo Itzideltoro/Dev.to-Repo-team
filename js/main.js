@@ -100,7 +100,7 @@ const fillDataToCards = (object, i, filter) => {
             </div>`
     i === 0 && filter != "scroll" ? firstPost : firstPost = ""
     let newCard = `
-            <section class="card rounded main-noticia">
+            <section class="card rounded main-noticia" data-entry-key=${key} data-toggle="modal" data-target="#thePost">
                 ${firstPost}
                 <!-- aqui termina la imagen principal -->
                 <!-- aqui empieza el usuario e imagen de usuario, nombre y fecha -->
@@ -184,6 +184,7 @@ const savePost = savedPosts => {
     xhttp.send( JSON.stringify( savedPosts ) );
 }
 const addBtnListener = () => {
+<<<<<<< HEAD
     let buttons = document.querySelectorAll(".botonsave")
     console.log(buttons)
     buttons.forEach( button => {
@@ -197,14 +198,33 @@ const addBtnListener = () => {
             savePost(entryKey)
         })
     })
+=======
+    addBtnListenerCards()
+>>>>>>> 96f10772b20babff13ec1d5eeaae682b0297d737
 }
 
 //--------------------------------------------INICIO FUNCIONALIDAD DE HTML POR POST--------------------------------------------
-//Listener del card seleccionado  ************Falta
-$(containerPost + " h2").click(event => {
-    console.log("LISTEN CARD")
-})
+//Listener del card seleccionado
+//Listener para las cards
+const addBtnListenerCards = () => {
+    $(containerPost + " .card").click(event => {
+        let entryKey = $(event.target).closest(".card").data("entry-key")
+        let theObject = allPost[entryKey]
+        let { title, username, datetime, tags, URL,content } = theObject
+        tags=tags.split(",")
+        $("#thePost .h1-post").text(title)
+        $("#thePost .modal-body .img-post").attr({ src: URL })
+        $("#thePost .modal-body .author").text(username)
+        $("#thePost .modal-body .date").text(datetime)
+        $("#thePost .modal-body .text-post").text(content)
+        $("#thePost .modal-body .tag1").text(tags[0])
+        $("#thePost .modal-body .tag2").text(tags[1])
+        $("#thePost .modal-body .tag3").text(tags[2])
+        $("#thePost").modal("show")
+    })
+}
 
+//$(window).attr('location','/post.html/?name=geoffrey&age=42') 
 //--------------------------------------------FIN FUNCIONALIDAD DE HTML POR POST--------------------------------------------
 
 
