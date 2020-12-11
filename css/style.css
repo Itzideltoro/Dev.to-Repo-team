@@ -1032,6 +1032,10 @@ footer .Sloan:hover {
   color: #3b49df;
 }
 
+.input-whos {
+  font-size: 30px;
+}
+
 #mainbg {
   padding-top: 70px;
 }
