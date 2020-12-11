@@ -1,6 +1,5 @@
 
 
-    
 
  .input-whos {
    
@@ -10,9 +9,6 @@
     outline:none;
     font-size: 30px;
     font-weight: 600;
-    
-   
-   
    
  }
 
@@ -63,3 +59,32 @@
 
  }
 
+
+ nav .btnnav {
+    .btn-nav1{
+      padding-left:90px;
+    }
+    
+ }
+
+ .boton-morado {
+    background-color: $morado2;
+    border: none;
+ }
+
+
+ .botonesmargen {
+    margin-left: 440px;
+ }
+
+
+ .navbarmargen{
+   margin-left: 40px;
+ }
+
+
+ .listaTags>a {
+
+   margin-bottom: 20px;
+
+ }

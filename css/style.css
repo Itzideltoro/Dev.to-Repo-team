@@ -1090,9 +1090,36 @@ footer .Sloan:hover {
   width: 170px;
 }
 
+nav .btnnav .btn-nav1 {
+  padding-left: 90px;
+}
+
+.boton-morado {
+  background-color: #323ebe;
+  border: none;
+}
+
+.botonesmargen {
+  margin-left: 440px;
+}
+
+.navbarmargen {
+  margin-left: 40px;
+}
+
+.listaTags > a {
+  margin-bottom: 20px;
+}
+
 .imag-user2w {
   width: 70px;
   height: 70px;
+}
+
+.botongris1 {
+  background-color: none;
+  color: #808080;
+  border: #808080;
 }
 
 #mainbg {
