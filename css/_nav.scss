@@ -1,6 +1,10 @@
 .nav-top{
     position: relative;
 
+    .writepost{
+        background-color:$color-button;
+    }
+
     .fa-dev{
         font-size: 45px; 
         color: black;
