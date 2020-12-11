@@ -347,7 +347,7 @@ a:hover {
 }
 
 .htext:hover {
-  color: #1827ce;
+  color: #363d44;
 }
 
 .postread .post1i {
@@ -1033,7 +1033,66 @@ footer .Sloan:hover {
 }
 
 .input-whos {
+  margin-top: -30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
   font-size: 30px;
+  font-weight: 600;
+}
+
+.itexta {
+  font-weight: 800;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  font-size: 60px;
+}
+
+.itag {
+  margin-top: -30px;
+  font-family: "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.iURL {
+  margin-top: -30px;
+  font-family: "SF Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.icontent {
+  margin-top: -30px;
+  font-weight: 600;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  font-size: 30px;
+}
+
+.idate {
+  width: 170px;
+}
+
+.imag-user2w {
+  width: 70px;
+  height: 70px;
 }
 
 #mainbg {
