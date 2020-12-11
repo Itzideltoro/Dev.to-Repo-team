@@ -2,12 +2,9 @@
 	"folders": [
 		{
 			"path": "."
-		},
-		{
-			"path": "../dev-proyecto"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "TeamDev.to"
+		"liveServer.settings.multiRootWorkspaceName": "dev-proyecto"
 	}
 }

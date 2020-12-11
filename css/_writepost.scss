@@ -65,12 +65,12 @@
       padding-left:90px;
     }
     
+    .navbarmargen{
+      margin-left: 40px;
+    }
+   
  }
 
- .boton-morado {
-    background-color: $morado2;
-    border: none;
- }
 
 
  .botonesmargen {
@@ -78,14 +78,12 @@
  }
 
 
- .navbarmargen{
-   margin-left: 40px;
- }
 
 
- .posta>button{
 
-   margin-bottom: 60px;
-   color:$gris;
 
- }
+
+ .boton-morado {
+   background-color: $morado2;
+   border: none;
+}
