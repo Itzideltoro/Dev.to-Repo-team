@@ -1,45 +1,11 @@
 
 
-let post = {
+let postObject = {
     title: "",
     username: "",
     datetime:"",
     tags:""
 }
-
-//Listener para botones Save
-const addBtnListener = () => {
-    let buttons = document.querySelectorAll(".botonsave")
-    console.log(buttons)
-    buttons.forEach( button => {
-        button.addEventListener("click", event => {
-            console.log(event)
-            console.log(event.target)
-            console.log(event.target.dataset)
-            console.log(event.target.dataset.entryKey)
-        
-            let entryKey = event.target.dataset.entryKey
-            savePost(entryKey)
-        })
-    })
-}
-
-const savePost = savedPosts => {
-    let xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-           // Typical action to be performed when the document is ready:
-           //xhttp.responseText;
-           let response = JSON.parse(xhttp.response);
-           console.log(response)
-           /*getItems()*/
-        }
-    };
-    // xhttp.open("POST", "https://ajaxclass-1ca34.firebaseio.com/carlosv/koders/.json ",true);
-    xhttp.open("POST", "https://desafio-esp-js-default-rtdb.firebaseio.com/readinglist/.json ",true);
-    xhttp.send( JSON.stringify( savedPosts ) );
-}
-
 const printPosts = posts => {
     let dataTable = document.getElementById("posts-table")
     dataTable.innerHTML = ""
@@ -63,23 +29,13 @@ const printPosts = posts => {
     }
     addBtnListenerArchive()
 }
-/* GET */
-const getPosts = () => {
-    let xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-           // Typical action to be performed when the document is ready:
-           //xhttp.responseText;
-           let response = JSON.parse(xhttp.response);
-           console.log(response)
-           printPosts( response )
-        }
-    };
-    // xhttp.open("GET", "https://ajaxclass-1ca34.firebaseio.com/carlosv/koders/.json ",true);
-    xhttp.open("GET", `https://desafio-esp-js-default-rtdb.firebaseio.com/readinglist/.json `,true);
-    xhttp.send();
+const getPostData = () => {
+    let title = document.getElementById("title").value
+    let username = document.getElementById("username").value
+    let datetime = document.getElementById("datetime").value
+    let tags = document.getElementById("tags").value
+    savePost( postObject)
 }
-
 
 //Listener para botones Archive
 const addBtnListenerArchive = () => {
@@ -96,6 +52,41 @@ const addBtnListenerArchive = () => {
             archivePost(entryKey)
         })
     })
+}
+
+document.getElementById("archive-button").addEventListener("click", getPostData )
+/* GET */
+const getPosts = () => {
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           // Typical action to be performed when the document is ready:
+           //xhttp.responseText;
+           let response = JSON.parse(xhttp.response);
+           console.log(response)
+           printPosts( response )
+        }
+    };
+
+    xhttp.open("GET", `https://desafio-esp-js-default-rtdb.firebaseio.com/readinglist/.json `,true);
+    // xhttp.open("GET", `https://desafio-esp-js-default-rtdb.firebaseio.com/post/${entryKey}/.json `,true);
+    xhttp.send();
+}
+/* POST */
+const savePost = posts => {
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           // Typical action to be performed when the document is ready:
+           //xhttp.responseText;
+           let response = JSON.parse(xhttp.response);
+           console.log(response)
+           getPosts()
+        }
+    };
+    // xhttp.open("POST", "https://ajaxclass-1ca34.firebaseio.com/carlosv/koders/.json ",true);
+    xhttp.open("POST", "https://desafio-esp-js-default-rtdb.firebaseio.com/readinglist/.json ",true);
+    xhttp.send( JSON.stringify( posts ) );
 }
 
 /* DELETE */
