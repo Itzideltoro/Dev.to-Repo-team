@@ -28,50 +28,84 @@
     <!--***********AQUI INICIA EL NAV***************************************************************************************************-->
     <!--**********************************************************************************************************************************************************************-->
     <nav class="navbar fixed-top navbar-light bg-light shadow-sm p-1 mb-5 bg-white rounded">
-        <div class="container nav-top">
-            <a class="navbar-brand" href="/index.html">
-                <i class="pl-1 fab fa-dev" title="dev"></i>
-            </a>
-            <form class="form-inline flex-grow-1 mr-1 mr-lg-5">
-                <input type="hidden" name="utf8" id="" placeholder="" autocomplete="" value="✓">
-                <input class="form-control w-100" type="search" placeholder="Search..." aria-label="Search">
-            </form>
-            <a href="/write-post.html">
+      <div class="container nav-top d-flex flex-nowrap">
+          <a class="navbar-brand" href="#">
+              <i class="pl-1 fab fa-dev" title="dev"></i>
+          </a>
+          <form class="form-inline flex-grow-1 mr-1 mr-lg-5" action="#">
+              <input class="form-control w-100 input-search" type="search" placeholder="Search...">
+          </form>
+          <a href="/write-post.html">
               <button type="button"
-              class="btn btn-primary shadow-none font-weight-bold mx-2 text-nowrap d-none d-md-block ml-lg-5">Write
-              a
-              post</button>
-          </a> 
+                  class="btn btn-primary shadow-none font-weight-bold mx-2 text-nowrap d-none d-md-block ml-lg-5">Write
+                  a
+                  post</button>
+          </a>
 
-            <a class="navbar-brand rounded-circle top-icons p-1 d-flex align-items-center" href="#">
-                <img src="images/nav/post-icon.png" class="rounded-circle" alt="Connect" loading="lazy">
-            </a>
-            <a class="navbar-brand rounded-circle top-icons p-1 d-flex align-items-center" href="#">
-                <img src="images/nav/notification-icon.png" class="rounded-circle" alt="Notifications" loading="lazy">
-            </a>
-            <div class="navbar-brand rounded-circle top-icons p-1 d-flex align-items-center dropdown">
-                <img src="images/nav/perfil-icon.png" class="rounded-circle" alt="Perfil" loading="lazy">
-                <div class="dropdown-content rounded position-absolute">
-                    <a class="dropdown-item" href="#">username<br><small class="text-muted">@username</small></a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Dashboard</a>
-                    <a class="dropdown-item" href="#">Write a Post</a>
-                    <a class="dropdown-item" href="#">Reading list</a>
-                    <a class="dropdown-item" href="#">Settings</a>
-                    <a class="dropdown-item" href="#">Key Links</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Sign Out</a>
-                </div>
-            </div>
-        </div>
-    </nav>
+          <a class="navbar-brand rounded-circle top-icons p-1 d-flex align-items-center" href="#">
+              <img src="images/nav/post-icon.png" class="rounded-circle" alt="Connect" loading="lazy">
+          </a>
+          <a class="navbar-brand rounded-circle top-icons p-1 d-flex align-items-center" href="#">
+              <img src="/images/nav/notification-icon.png" class="rounded-circle" alt="Notifications"
+                  loading="lazy">
+          </a>
+          <div class="navbar-brand rounded-circle top-icons p-1 d-flex align-items-center dropdown">
+              <img src="images/nav/perfil-icon.png" class="rounded-circle" alt="Perfil" loading="lazy">
+              <div class="dropdown-content rounded position-absolute">
+                  <a class="dropdown-item" href="#">username<br><small class="text-muted">@username</small></a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Dashboard</a>
+                  <a class="dropdown-item" href="#">Write a Post</a>
+                  <a class="dropdown-item" href="#">Reading list</a>
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <a class="dropdown-item" href="#">Key Links</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Sign Out</a>
+              </div>
+          </div>
+      </div>
+  </nav>
     <!--***********AQUI TERMINA EL NAV***************************************************************************************************-->
 
 <!--**********************************************************************************************************************************************************************-->
     <!--***********AQUI EMPIEZA ASIDE 1***************************************************************************************************-->
     <!--**********************************************************************************************************************************************************************-->
+ <div class="col-12 d-md-block d-lg-none">
 
+  <nav class="navbar position-fixed fixed-bottom navbar-light shadow-sm p-1 rounded nav-bottom text-dark justify-content-around">
+    <button class="navbar-brand heart d-flex align-items-center justify-content-center border-0">
+        <a class="rounded-circle icon p-2 far fa-heart text-decoration-none" href="#"></a>
+        #
+    </button>
+    <button class="navbar-brand unicorn d-flex align-items-center justify-content-center border-0">
+        <a class="rounded-circle icon p-2 d-flex align-items-center fas fa-horse-head text-decoration-none" href="#"></a>
+        #
+    </button>
+    <button class="navbar-brand saved d-flex align-items-center justify-content-center border-0">
+        <a class="rounded-circle icon p-2 d-flex align-items-center far fa-bookmark text-decoration-none" href="#"></a>
+        #
+    </button>
+    <div class="navbar-brand rounded-circle p-1 d-flex align-items-center dropdown">
+        <button class="rounded-circle icon p-2 fa fa-ellipsis-h border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        </button>
+        <div class="dropdown-content rounded position-absolute">
+            <div class="d-flex align-items-center "> 
+                <input type="url" class="flex-grow-1 mr-2"  placeholder="https://">
+                <i class="icon far fa-copy"></i>
+            </div>
+            <a class="dropdown-item" href="#">Share to Twitter</a>
+            <a class="dropdown-item" href="#">Share to LinkedIn</a>
+            <a class="dropdown-item" href="#">Share to Reddit</a>
+            <a class="dropdown-item" href="#">Share to Hacker News</a>
+            <a class="dropdown-item" href="#">Share to Facebook</a>
+            <a class="dropdown-item" href="#">Report Abuse</a>
+        </div>
+    </div>
+</nav>
 
+ </div>
+    
+  
   <div class="container-fluid mt-4" id="mainbg">
     <div class="row">
       <div class="container">
@@ -79,15 +113,24 @@
           <div class="col-12 col-md-2 col-lg-1">
             <aside>
 
-              <div>
+              <div class= "d-none d-md-block">
            
-                <div class="bgd-items d-fex d-row">
-                    <a class="nav-link" href="#">👍 </a>
-                    <a class="nav-link" href="#">💡 </a>
-                    <a class="nav-link" href="#">❤️</a>
-                    <a class="nav-link" href="#">💡 </a>
-                    <a class="nav-link" href="#">❤️</a>
-
+                <div class="posta bgd-items d-fex d-row">
+                  <button class="rounded-circle icon p-2 fa fa-ellipsis-h border-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  </button>
+                  <button class="navbar-brand saved d-flex align-items-center justify-content-center border-0">
+                    <a class="rounded-circle icon p-2 d-flex align-items-center far fa-bookmark text-decoration-none" href="#"></a>
+                    
+                </button>
+                <button class="navbar-brand heart d-flex align-items-center justify-content-center border-0">
+                  <a class="rounded-circle icon p-2 far fa-heart text-decoration-none" href="#"></a>
+                  
+              </button>
+              <button class="navbar-brand unicorn d-flex align-items-center justify-content-center border-0">
+                <a class="rounded-circle icon p-2 d-flex align-items-center fas fa-horse-head text-decoration-none" href="#"></a>
+                
+            </button>
+      
                 </div>
             </div>
             </aside>
