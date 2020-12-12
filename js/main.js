@@ -122,11 +122,11 @@ const fillDataToCards = (object, i, filter) => {
     tags = tags.split(",") /*Esto puede cambiar si cambiamos el guardado en Write-Post*****/
     let firstPost = `
             <div class="class">
-                <img class="img-fluid" src="${URL}" alt=""/>
+                <img class="img-fluid img-post" data-entry-key=${key} data-toggle="modal" data-target="#thePost" src="${URL}" alt=""/>
             </div>`
     i === 0 && filter != "scroll" ? firstPost : firstPost = ""
     let newCard = `
-            <section class="card rounded main-noticia" data-entry-key=${key} data-toggle="modal" data-target="#thePost">
+            <section class="card rounded main-noticia>
                 ${firstPost}
                 <!-- aqui termina la imagen principal -->
                 <!-- aqui empieza el usuario e imagen de usuario, nombre y fecha -->
@@ -150,7 +150,7 @@ const fillDataToCards = (object, i, filter) => {
                                 <div class="col mb-3">
                                     <a class="etimain hover d-flex">
                                         <div class=" mb-1">
-                                            <h2 class="eti4 margn1 title-post">${title}</h2>
+                                            <h2 class="eti4 margn1 title-post" data-entry-key=${key} data-toggle="modal" data-target="#thePost">${title}</h2>
                                         </div>
                                     </a>
                                     <div class="etimain margn1">
@@ -218,7 +218,6 @@ const addBtnListener = () => {
             console.log(event.target)
             console.log(event.target.dataset)
             console.log(event.target.dataset.entryKey)
-        
             let entryKey = event.target.dataset.entryKey
             savePost(entryKey)
         })
@@ -229,8 +228,8 @@ const addBtnListener = () => {
 //Listener del card seleccionado
 //Listener para las cards
 const addBtnListenerCards = () => {
-    $(containerPost + " .card").click(event => {
-        let entryKey = $(event.target).closest(".card").data("entry-key")
+    $(".img-post, .title-post").click(event => {
+        let entryKey = $(event.target).data("entry-key")
         let theObject = allPost[entryKey]
         let { title, username, datetime, tags, URL,content } = theObject
         tags=tags.split(",")
