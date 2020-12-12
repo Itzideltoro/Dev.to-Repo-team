@@ -150,7 +150,7 @@ const fillDataToCards = (object, i, filter) => {
                                 <div class="col mb-3">
                                     <a class="etimain hover d-flex">
                                         <div class=" mb-1">
-                                            <h2 class="eti4 margn1">${title}</h2>
+                                            <h2 class="eti4 margn1 title-post">${title}</h2>
                                         </div>
                                     </a>
                                     <div class="etimain margn1">
@@ -209,6 +209,7 @@ const savePost = savedPosts => {
     xhttp.send( JSON.stringify( savedPosts ) );
 }
 const addBtnListener = () => {
+    addBtnListenerCards()
     let buttons = document.querySelectorAll(".botonsave")
     console.log(buttons)
     buttons.forEach( button => {
@@ -245,7 +246,7 @@ const addBtnListenerCards = () => {
     })
 }
 
-addBtnListenerCards()
+
 
 //$(window).attr('location','/post.html/?name=geoffrey&age=42') 
 //--------------------------------------------FIN FUNCIONALIDAD DE HTML POR POST--------------------------------------------
