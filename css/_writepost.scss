@@ -65,17 +65,12 @@
       padding-left:90px;
     }
     
+    .navbarmargen{
+      margin-left: 40px;
+    }
+   
  }
 
- .boton-morado {
-    background-color: $morado2;
-    border: none;
- }
-
-
- .botonesmargen {
-    margin-left: 440px;
- }
 
 
  .navbarmargen{
@@ -83,8 +78,16 @@
  }
 
 
- .listaTags>a {
 
-   margin-bottom: 20px;
 
- }
+ 
+
+
+ @media (max-width: 320px) {
+   .itexta,.input-whos,.iURL,.icontent,.idate,.itag{
+     font-size: large;
+   }
+   .iURL,.itag,.idate{
+      font-size: medium;
+    }
+}
