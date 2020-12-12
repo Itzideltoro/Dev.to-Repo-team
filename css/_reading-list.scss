@@ -34,33 +34,21 @@
   // icon-margin: $su-2;
   // position: relative;
   display: inline-block;
-  padding: calc(var(--vertical-padding) - var(--border-width)) calc(var(--horizontal-padding) - var(--border-width));
+  padding: $vertical-padding - $border-width $horizontal-padding - $border-width;
   border-radius: $radius;
   outline: none;
   font-family: inherit;
-  font-size: var(--font-size);
-  line-height: var(--su-6);
-  font-weight: var(--fw-medium);
+  font-size: $font-size;
+  line-height: $su-6;
+  font-weight: $fw-medium;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: all var(--transition-props);
-  border: var(--border-width) solid;
-  --bg: var(--button-primary-bg);
-  --bg-hover: var(--button-primary-bg-hover);
-  --border: transparent;
-  --border-hover: transparent;
-  --color: var(--button-primary-color);
-  --color-hover: var(--button-primary-color-hover);
-  --shadow: 0 1px 3px var(--shadow-color);
-  --shadow-hover: 0 2px 5px var(--shadow-color);
-  --bg-inverted: var(--button-primary-inverted-bg);
-  --bg-inverted-hover: var(--button-primary-inverted-bg-hover);
-  --color-inverted: var(--button-primary-inverted-color);
-  --color-inverted-hover: var(--button-primary-inverted-color-hover);
+  transition: all $transition-props;
+  border: $border-width solid;
   background-color: $accent-brand;
-  border-color: var(--border);
-  box-shadow: var(--shadow);
+  border-color: $border;
+  box-shadow: $shadow;
   color: $base-0;
 }
 
@@ -70,12 +58,8 @@ ul {
 
 .crayons-title {
   font-size: $fs-3xl;
-}
-.crayons-title {
   color: $base-100;
   font-size: $fs-2xl;
-}
-.crayons-title, .crayons-subtitle-1, .crayons-subtitle-2, .crayons-subtitle-3 {
   font-weight: $fw-bold;
   color: $base-90;
 }
