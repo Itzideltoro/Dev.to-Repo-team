@@ -73,11 +73,6 @@
  }
 
 
- .botonesmargen {
-    margin-left: 440px;
- }
-
-
  .navbarmargen{
    margin-left: 40px;
  }
@@ -88,3 +83,13 @@
    margin-bottom: 20px;
 
  }
+
+
+ @media (max-width: 320px) {
+   .itexta,.input-whos,.iURL,.icontent,.idate,.itag{
+     font-size: large;
+   }
+   .iURL,.itag,.idate{
+      font-size: medium;
+    }
+}
