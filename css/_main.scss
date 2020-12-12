@@ -544,6 +544,40 @@ a:hover {
     color:$base-80;
  
   }
+
+
+  .navinternoi li{
+
+    
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left:8px;
+    padding-right:8px;
+    border-radius: 5%;
+}
+
+
+
+
+.navinternoi li:hover {
+  background: #d8dcfe;
+  color:$accent-brand-darker;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left:8px;
+  padding-right:8px;
+  border-radius: 5%;
+
+}
+
+
+
+.navinternoi li hover::after  {
+  background:pink;
+
+}
+
+
   
   
 
