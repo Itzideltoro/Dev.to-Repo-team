@@ -70,7 +70,7 @@ const getTheJson = (origin, criteria) => {
         method: "GET",
         success: data => {
             allPost = data
-            //orderTheJson()
+            console.log(allPost)
             gettingToCriteria(allPost, origin, criteria)
         },
         error: error => {
@@ -194,6 +194,8 @@ const fillDataToCards = (object, i, filter) => {
 // const addBtnListener = () => {
 //     console.log("listener")
 // }
+
+/*
 const savePost = savedPosts => {
     let xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -202,7 +204,7 @@ const savePost = savedPosts => {
            //xhttp.responseText;
            let response = JSON.parse(xhttp.response);
            console.log(response)
-           /*getItems()*/
+           //getItems()
         }
     };
     xhttp.open("POST", "https://desafio-esp-js-default-rtdb.firebaseio.com/readinglist/.json ",true);
@@ -223,6 +225,23 @@ const addBtnListener = () => {
         })
     })
 }
+*/
+
+const addBtnListener = () => {
+    addBtnListenerCards()
+    $(".botonsave").click(event => {
+        let entryKey = $(event.target).data("entry-key")
+        $.ajax({
+            url: "https://desafio-esp-js-default-rtdb.firebaseio.com/readinglist/.json",
+            method: "POST",
+            data: JSON.stringify(entryKey),
+            success: data => {
+                console.log(data)
+            },
+            error: "",
+        });
+    })
+}
 
 //--------------------------------------------INICIO FUNCIONALIDAD DE HTML POR POST--------------------------------------------
 //Listener del card seleccionado
@@ -231,8 +250,8 @@ const addBtnListenerCards = () => {
     $(".img-post, .title-post").click(event => {
         let entryKey = $(event.target).data("entry-key")
         let theObject = allPost[entryKey]
-        let { title, username, datetime, tags, URL,content } = theObject
-        tags=tags.split(",")
+        let { title, username, datetime, tags, URL, content } = theObject
+        tags = tags.split(",")
         $("#thePost .h1-post").text(title)
         $("#thePost .modal-body .img-post").attr({ src: URL })
         $("#thePost .modal-body .author").text(username)
@@ -264,3 +283,4 @@ $(window).scroll(function () {
 
 ////--------------------------------------------INSTRUCCIONES INICIALES--------------------------------------------
 getTheJson("main", "")
+getReadingPost()
