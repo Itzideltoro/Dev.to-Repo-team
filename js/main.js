@@ -205,7 +205,6 @@ const savePost = savedPosts => {
            /*getItems()*/
         }
     };
-    // xhttp.open("POST", "https://ajaxclass-1ca34.firebaseio.com/carlosv/koders/.json ",true);
     xhttp.open("POST", "https://desafio-esp-js-default-rtdb.firebaseio.com/readinglist/.json ",true);
     xhttp.send( JSON.stringify( savedPosts ) );
 }
@@ -224,7 +223,6 @@ const addBtnListener = () => {
         })
     })
 }
-    addBtnListenerCards()
 
 //--------------------------------------------INICIO FUNCIONALIDAD DE HTML POR POST--------------------------------------------
 //Listener del card seleccionado
@@ -246,6 +244,8 @@ const addBtnListenerCards = () => {
         $("#thePost").modal("show")
     })
 }
+
+addBtnListenerCards()
 
 //$(window).attr('location','/post.html/?name=geoffrey&age=42') 
 //--------------------------------------------FIN FUNCIONALIDAD DE HTML POR POST--------------------------------------------
