@@ -10,7 +10,7 @@ let post = {
 
 //Request de GET a AJAX
 
-const getPosts = allPosts => {
+const getALLPosts = allPosts => {
     $.ajax({
         url: endpointPostsData,
         method: "GET",
@@ -24,7 +24,7 @@ const getPosts = allPosts => {
     });
     
 }
-getPosts()
+getALLPosts()
 console.log(allPosts)
 
 
@@ -70,23 +70,23 @@ const addBtnListenerArchive = () => {
 }
 
 // document.getElementById("archive-button").addEventListener("click", getPostData )
-// /* GET */
-// const getPosts = () => {
-//     let xhttp = new XMLHttpRequest();
-//     xhttp.onreadystatechange = function() {
-//         if (this.readyState == 4 && this.status == 200) {
-//            // Typical action to be performed when the document is ready:
-//            //xhttp.responseText;
-//            let response = JSON.parse(xhttp.response);
-//            console.log(response)
-//            printPosts( response )
-//         }
-//     };
+/* GET */
+const getPosts = () => {
+    let xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           // Typical action to be performed when the document is ready:
+           //xhttp.responseText;
+           let response = JSON.parse(xhttp.response);
+           console.log(response)
+           printPosts( response )
+        }
+    };
 
-//     xhttp.open("GET", `https://desafio-esp-js-default-rtdb.firebaseio.com/readinglist/.json `,true);
-//     // xhttp.open("GET", `https://desafio-esp-js-default-rtdb.firebaseio.com/post/${entryKey}/.json `,true);
-//     xhttp.send();
-// }
+    xhttp.open("GET", `https://desafio-esp-js-default-rtdb.firebaseio.com/readinglist/.json `,true);
+    // xhttp.open("GET", `https://desafio-esp-js-default-rtdb.firebaseio.com/post/${entryKey}/.json `,true);
+    xhttp.send();
+}
 /* POST */
 const savePost = posts => {
     let xhttp = new XMLHttpRequest();
