@@ -1,6 +1,12 @@
 let endpointPostsData = "https://desafio-esp-js-default-rtdb.firebaseio.com/post/.json"
 let allPosts = {}
 
+let post = {
+    title: "",
+    username: "",
+    datetime: "",
+    tags: ""
+}
 
 //Request de GET a AJAX
 
@@ -19,7 +25,7 @@ const getPosts = allPosts => {
     
 }
 getPosts()
-//console.log(allPosts)
+console.log(allPosts)
 
 
 const printPosts = posts => {
@@ -45,13 +51,6 @@ const printPosts = posts => {
     }
     addBtnListenerArchive()
 }
-const getPostData = () => {
-    let title = document.getElementById("title").value
-    let username = document.getElementById("username").value
-    let datetime = document.getElementById("datetime").value
-    let tags = document.getElementById("tags").value
-    savePost( postObject)
-}
 
 //Listener para botones Archive
 const addBtnListenerArchive = () => {
@@ -70,7 +69,7 @@ const addBtnListenerArchive = () => {
     })
 }
 
-document.getElementById("archive-button").addEventListener("click", getPostData )
+// document.getElementById("archive-button").addEventListener("click", getPostData )
 // /* GET */
 // const getPosts = () => {
 //     let xhttp = new XMLHttpRequest();
