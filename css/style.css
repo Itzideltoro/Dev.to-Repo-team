@@ -233,7 +233,7 @@ a:hover {
 }
 
 .h6i {
-  font-size: 12px;
+  font-size: 50px;
   vertical-align: middle;
 }
 
@@ -379,7 +379,11 @@ a:hover {
 }
 
 .etimain .eti4 {
-  color: black;
+  color: #4d5760;
+}
+
+.etimain .eti44 {
+  font-size: 20;
 }
 
 .botonesm1 .boton1 {

@@ -150,7 +150,7 @@ const fillDataToCards = (object, i, filter) => {
                                 <div class="col mb-3">
                                     <a class="etimain hover d-flex">
                                         <div class=" mb-1">
-                                            <h2 class="eti4 margn1 title-post" data-entry-key=${key} data-toggle="modal" data-target="#thePost">${title}</h2>
+                                            <h2 class="eti44 margn1 title-post" data-entry-key=${key} data-toggle="modal" data-target="#thePost">${title}</h2>
                                         </div>
                                     </a>
                                     <div class="etimain margn1">
