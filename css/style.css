@@ -395,9 +395,12 @@ a:hover {
   color: #202428;
 }
 
+.botonesm1 .botonsave:hover {
+  background-color: #64707D;
+}
+
 .h6i {
   font-size: 12px;
-  vertical-align: middle;
 }
 
 .imag-logo {
@@ -444,6 +447,12 @@ a:hover {
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 5%;
+}
+
+@media (min-width: 780px) {
+  .paddnga2 {
+    margin-left: 20px;
+  }
 }
 
 .nav-top {
@@ -1131,12 +1140,6 @@ nav .btnnav .navbarmargen {
   }
   .iURL, .itag, .idate {
     font-size: medium;
-  }
-}
-
-@media (maxn-width: 320px) {
-  .paddnga2 {
-    background: pink;
   }
 }
 

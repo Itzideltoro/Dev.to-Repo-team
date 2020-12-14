@@ -483,10 +483,12 @@ a:hover {
       font-size: 15px;
       background-color:$base-20;
       border: none;
-      color:$base-90;
-    
-      
+      color:$base-90; 
   
+    }
+
+    .botonsave:hover{
+      background-color:$color-social;
     }
   
   }
@@ -496,7 +498,7 @@ a:hover {
     //15 min read
     
     font-size: 12px;
-    vertical-align: middle;
+   
   
   }
   
@@ -576,9 +578,13 @@ a:hover {
 
 .paddnga2 {
 
- 
+  @media (min-width: 780px) {
+  margin-left: 20px;   
 
 }
+}
+
+
 
 
 
