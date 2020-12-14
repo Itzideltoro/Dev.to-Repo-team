@@ -270,10 +270,10 @@ a:hover {
   
   }
   
-  
+  //read 15 min
   .h6i {
     
-    font-size: 12px;
+    font-size: 20px;
     vertical-align: middle;
   
   }
@@ -315,12 +315,6 @@ a:hover {
   
   }
   
-
-
-
-
-
-
 
 
   a:hover {
@@ -447,7 +441,7 @@ a:hover {
   }
   
   .margn1 {
-    margin-left: 46px;
+    margin-left: 20px;
   }
   
   
@@ -456,47 +450,105 @@ a:hover {
   .etimain {
     .eti1 {
       color: $base-70;
+      font-size: 15px;
     }
-  
+    .eti1:hover{
+      color:black;
+    }
+
+      
     .eti2 {
       color: $base-70;
+      font-size: 15px;
     }
+
+    .eti2:hover{
+      color:black;
+    }
+
   
     .eti3 {
       color: $base-70;
+      font-size: 15px;
+      
+     
     }
+
+    .eti3:hover{
+      color:black;
+    }
+
   
     .eti4 {
-      color: black;
+      color:$base-70;
+      
+      
     }
+
+    .eti4:hover{
+      color:black;
+    }
+
+
+    .eti44 {
+      font-size: 20px;
+      color:black
+    }
+
+    .eti44:hover{
+      color:$color-textlink;
+    }
+
   }
   
   .botonesm1 {
   
     .boton1 {
+      //botones de reactions y comments
   
       font-size: 14px;
-      background-color: white;
+      background-color:none;
       border: none;
-      
+ 
+    }
+
+    .boton1:hover{
+      background-color:$base-10;
+    }
+
+    .boton2 {
+      //botones de reactions y comments
   
+      font-size: 14px;
+      background-color:none;
+      border: none;
+ 
+    }
+
+    .boton2:hover{
+      background-color:$base-10;
     }
   
     .botonsave {
       font-size: 15px;
       background-color:$base-20;
       border: none;
-      color:$base-90;
+      color:$base-90; 
   
+    }
+
+    .botonsave:hover{
+      background-color:$color-social;
     }
   
   }
   
   
   .h6i {
+    //15 min read
     
     font-size: 12px;
-    vertical-align: middle;
+   
   
   }
   
@@ -548,7 +600,7 @@ a:hover {
 
   .navinternoi li{
 
-    
+    font-size: 17px;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left:8px;
@@ -569,6 +621,39 @@ a:hover {
   border-radius: 5%;
 
 }
+
+
+
+//aside 2 padding 
+
+.paddnga2 {
+
+  @media (min-width: 780px) {
+  margin-left: 20px;   
+
+}
+}
+
+#minutes {
+font-size:12px;
+}
+
+
+.btncrayon {
+  background-color: $color-button;
+  border: none;
+  color:white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
+
+}
+
+
+
 
 
 

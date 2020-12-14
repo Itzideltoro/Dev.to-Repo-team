@@ -233,7 +233,7 @@ a:hover {
 }
 
 .h6i {
-  font-size: 12px;
+  font-size: 20px;
   vertical-align: middle;
 }
 
@@ -363,29 +363,71 @@ a:hover {
 }
 
 .margn1 {
-  margin-left: 46px;
+  margin-left: 20px;
 }
 
 .etimain .eti1 {
   color: #4d5760;
+  font-size: 15px;
+}
+
+.etimain .eti1:hover {
+  color: black;
 }
 
 .etimain .eti2 {
   color: #4d5760;
+  font-size: 15px;
+}
+
+.etimain .eti2:hover {
+  color: black;
 }
 
 .etimain .eti3 {
   color: #4d5760;
+  font-size: 15px;
+}
+
+.etimain .eti3:hover {
+  color: black;
 }
 
 .etimain .eti4 {
+  color: #4d5760;
+}
+
+.etimain .eti4:hover {
   color: black;
+}
+
+.etimain .eti44 {
+  font-size: 20px;
+  color: black;
+}
+
+.etimain .eti44:hover {
+  color: #3b49df;
 }
 
 .botonesm1 .boton1 {
   font-size: 14px;
-  background-color: white;
+  background-color: none;
   border: none;
+}
+
+.botonesm1 .boton1:hover {
+  background-color: #eef0f1;
+}
+
+.botonesm1 .boton2 {
+  font-size: 14px;
+  background-color: none;
+  border: none;
+}
+
+.botonesm1 .boton2:hover {
+  background-color: #eef0f1;
 }
 
 .botonesm1 .botonsave {
@@ -395,9 +437,12 @@ a:hover {
   color: #202428;
 }
 
+.botonesm1 .botonsave:hover {
+  background-color: #64707D;
+}
+
 .h6i {
   font-size: 12px;
-  vertical-align: middle;
 }
 
 .imag-logo {
@@ -429,6 +474,7 @@ a:hover {
 }
 
 .navinternoi li {
+  font-size: 17px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 8px;
@@ -444,6 +490,27 @@ a:hover {
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 5%;
+}
+
+@media (min-width: 780px) {
+  .paddnga2 {
+    margin-left: 20px;
+  }
+}
+
+#minutes {
+  font-size: 12px;
+}
+
+.btncrayon {
+  background-color: #3b49df;
+  border: none;
+  color: white;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .nav-top {

@@ -72,6 +72,7 @@ const getTheJson = (origin, criteria) => {
             allPost = data
             console.log(allPost)
             gettingToCriteria(allPost, origin, criteria)
+
         },
         error: error => {
             console.log(error)
@@ -150,7 +151,7 @@ const fillDataToCards = (object, i, filter) => {
                                 <div class="col mb-3">
                                     <a class="etimain hover d-flex">
                                         <div class=" mb-1">
-                                            <h2 class="eti4 margn1 title-post" data-entry-key=${key} data-toggle="modal" data-target="#thePost">${title}</h2>
+                                            <h2 class="eti44 margn1 title-post" data-entry-key=${key} data-toggle="modal" data-target="#thePost">${title}</h2>
                                         </div>
                                     </a>
                                     <div class="etimain margn1">
@@ -164,18 +165,18 @@ const fillDataToCards = (object, i, filter) => {
                     </div>
                     <!-- aqui termina la parte media card principal -->
                     <!-- aqui empieza el footer card principal -->
-                    <div class="container ml-4">
+                    <div class="container">
                         <div class="row">
                             <div class="container botonesm1 d-flex mr-4 mb-3">
                                 <div class="col-6 p-0">
-                                    <button type="button" class="margin1 boton1 mr-2 btn btn-light">12
-                                        reactions</button>
-                                    <button type="button" class="margin1 boton1 btn btn-light ">3
-                                        comments</button>
+                                    <button type="button" class="boton1 btn btn-light m-0" onclick="addLike(${i})"> <span data-index="${i}">0</span>
+                                    <i class="far fa-heart"></i> </button>
+                                    <button type="button" class="boton2 btn btn-light m-0" onclick="addLike2(${i})"> <span data-index="${i}">0</span>
+                                    <i class="far fa-comment"></i> </button>
                                 </div>
-                                <div class="col-6 d-flex justify-content-end p-0">
+                                <div class="col-6 d-flex justify-content-end ml-5 ">
                                     <div>
-                                        <span class="h6i mr-2 align-middle">15 min read</span>
+                                        <span class="h6i mr-2 align-middle" id="minutes" >15 min read</span>
                                     </div>
                                     <button type="button"
                                         class="botonsave btn btn-outline-secondary" data-entry-key=${key}>Save</button>
@@ -283,4 +284,44 @@ $(window).scroll(function () {
 
 ////--------------------------------------------INSTRUCCIONES INICIALES--------------------------------------------
 getTheJson("main", "")
-getReadingPost()
+//getReadingPost()
+
+
+
+const addLike = (index) => {
+
+    let spans = $(".boton1 > span")
+    
+    for (span of spans) {
+        spanIndex = $(span).data("index")
+
+        if (spanIndex === index) {
+           let valorActual =  parseInt($(span).html())
+           let nuevoValor = valorActual + 1
+           $(span).html(nuevoValor)
+        }
+    }
+
+    
+
+
+}
+
+const addLike2 = (index) => {
+
+    let spans = $(".boton2 > span")
+    
+    for (span of spans) {
+        spanIndex = $(span).data("index")
+
+        if (spanIndex === index) {
+           let valorActual =  parseInt($(span).html())
+           let nuevoValor = valorActual + 1
+           $(span).html(nuevoValor)
+        }
+    }
+
+    
+
+
+}
