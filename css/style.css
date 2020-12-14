@@ -420,6 +420,16 @@ a:hover {
   background-color: #eef0f1;
 }
 
+.botonesm1 .boton2 {
+  font-size: 14px;
+  background-color: none;
+  border: none;
+}
+
+.botonesm1 .boton2:hover {
+  background-color: #eef0f1;
+}
+
 .botonesm1 .botonsave {
   font-size: 15px;
   background-color: #d2d6db;
@@ -464,6 +474,7 @@ a:hover {
 }
 
 .navinternoi li {
+  font-size: 17px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 8px;

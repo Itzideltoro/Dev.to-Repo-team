@@ -515,6 +515,19 @@ a:hover {
     .boton1:hover{
       background-color:$base-10;
     }
+
+    .boton2 {
+      //botones de reactions y comments
+  
+      font-size: 14px;
+      background-color:none;
+      border: none;
+ 
+    }
+
+    .boton2:hover{
+      background-color:$base-10;
+    }
   
     .botonsave {
       font-size: 15px;
@@ -587,7 +600,7 @@ a:hover {
 
   .navinternoi li{
 
-    
+    font-size: 17px;
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left:8px;
