@@ -103,160 +103,93 @@
                 
             <div class="col-12 col-lg-9 vh-nav p-0">
                 <div class="container mt-4 p-0">
-                  <!-- <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="botongris1 btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                  </form> -->
-
                     <div class="row">
                       <div class="col-12 col-md-12 col-lg-12 bg-white border border-$base80">
-                       
-                        <div class="container">
-                          <div class="row">
+ 
 
-
-                            <table class="table table-striped">
-                              <!-- <thead>
-                                 <tr>
-                                   <th scope="col">Title</th>
-                                   <th scope="col">Username</th>
-                                   <th scope="col">Date</th>
-                                   <th scope="col">Tags</th>
-                                   <th scope="col">&nbsp;</th>
-                                 </tr>
-                               </thead>  -->
-                               <tbody id="posts-table">
-                                 <tr>
-                                   <td>X</td>
-                                   <td>Y</td>
-                                   <td>
-                                     <div id="archive-button" class="btn btn-primary btn-archive" data-entry-key=${key}>Archive</div>
-                                   </td>
-                                 </tr>
-                             </tbody>
-                           </table>
-            
-                            <div class="col">
-      
-        
-
-      <!--***************************************** termina usuario -***************************************************************************-->
-      
-      <!--***************************************** usuario 2 -***************************************************************************-->
-                              <div class="imgh mb-4 pd-4 mt-4">
-                                <a class="htext hover d-flex">
-                                  <img class="imag-user2 img-fluid rounded-circle mr-3"
-                                  src="https://i.picsum.photos/id/1009/5000/7502.jpg?hmac=Uj6crVILzsKbyZreBjHuMiaq_-n30qoHjqP0i7r30r8"
-                                  alt="1-" />
-                                  <div class="postread">
-                                    <h5 class="post1i mb-1">How to create a custom scrollbar with React Native Animated API</h5>
-                                    <p class="post2i">Shunsuke - Nov 7 #react#mobile#javascript#reactnative</p>
-                              
-                                  </div>
-                                </a>
+                        <div class="container-reading mb-4">
+                          <!-- aqui empieza la card principal -->
+                          <!-- aqui empieza la imagen principal -->
+                          <!-- aqui termina el footer de card principal -->
+                          <!-- ****************************************  aqui termina la card principal ***************************************************************-->
+                          <div class="imgh mb-4">
+                              <a href="/simonholdorf" datatestid="item-user" class="crayons-avatar crayons-avatar--l shrink-0"><img src="https://picsum.photos/id/${i}/200" alt="Simon Holdorf" class="crayons-avatar__image">
+                              </a>  
+                              <div class="postread pl-4">
+                                <div class="post1i mb-1 fs-l fw-bold break-word">${title}</div>
+                                <p class="post2i">${username} - ${datetime} ${tags[0]} ${tags[1]} ${tags[2]}</p>
                               </div>
-      <!--*****************************************  termina usuario 2-***************************************************************************-->
-      <!--***************************************** usuario 3 -***************************************************************************-->
-                              <div class="imgh mb-4 pd-4">
-                                
-                                <a class="htext hover d-flex">
-                                  <img class="imag-user2 img-fluid rounded-circle mr-3"
-                                  src="https://i.picsum.photos/id/1006/3000/2000.jpg?hmac=x83pQQ7LW1UTo8HxBcIWuRIVeN_uCg0cG6keXvNvM8g"
-                                  alt="1-" />
-                                  <div class="postread">
-                                    <h5 class="post1i mb-1">52 Virtual Cups of Coffee: A Developers Journey for Navigating Uncertainties </h5>
-                                    <p class="post2i">Lisa - Nov 7 </p>
-                                  </div>
-                                </a>
-      
-                              </div>
-      <!--***************************************** termina usuario 3 -***************************************************************************-->                        
-      
-      <!--***************************************** usuario 4 -***************************************************************************-->
-                              <div class="imgh mb-4 pd-4 d-flex align-items-center">
-                                
-                                <a class="htext hover d-flex">
-                                  <img class=" imag-user2w imag-user2 img-fluid rounded-circle mr-3"
-                                  src="https://i.picsum.photos/id/1005/5760/3840.jpg?hmac=2acSJCOwz9q_dKtDZdSB-OIK1HUcwBeXco_RMMTUgfY"
-                                  alt="1-" />
-                                  <div class="postread">
-                                    <h5 class="post1i mb-1">Concise and type</h5>
-                                    <p class="post2i">lury Souza- Nov 7 </p>
-                                  </div>
-                                </a>
-      
-                              </div>
-      <!--***************************************** termina usuario 4 -***************************************************************************-->                        
-      
+                            
+                            <div class="self.center">
+                               <button  id="archive-button" class="btn btn-archive" class="crayons-btn crayons-btn--ghost crayons-btn--s" data-entry-key=${key2} >Archive</button>
                             </div>
+
                           </div>
-      
                         </div>
-      
                       </div>
                     </div>
-                  </div>
-      
+                </div>
             </div>
-          </div>
         </div>
     </div>
 
         <!--***********AQUI INICIA EL FOOTER***************************************************************************************************-->
-    <!--**********************************************************************************************************************************************************************-->
-    <div class="container-fluid">
-        <footer class="row">
-            <div class="container">
-                <div class="row d-block d-md-flex flex-md-row position-relative">
-                    <div class="col-12 col-md-8 col-lg-8 footer-nav order-md-2 py-3">
-                        <a href="" class="text-decoration-none p-1">Home</a>
-                        <a href="" class="text-decoration-none p-1">Reading List</a>
-                        <a href="" class="text-decoration-none p-1">Listings</a>
-                        <a href="" class="text-decoration-none p-1">Podcast</a>
-                        <a href="" class="text-decoration-none p-1">Videos</a>
-                        <a href="" class="text-decoration-none p-1">Tags</a>
-                        <a href="" class="text-decoration-none p-1">Code of Conduct</a>
-                        <a href="" class="text-decoration-none p-1">FAQ</a>
-                        <a href="" class="text-decoration-none p-1">DEV Shops</a>
-                        <a href="" class="text-decoration-none p-1">Sponsors</a>
-                        <a href="" class="text-decoration-none p-1">About</a>
-                        <a href="" class="text-decoration-none p-1">Privacy Policy</a>
-                        <a href="" class="text-decoration-none p-1">Term of use</a>
-                        <a href="" class="text-decoration-none p-1">Contact</a>
-                        <a href="" class="text-decoration-none p-1 font-weight-bold">Write a post</a>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-4 d-block order-md-1 py-3">
-                        <a href="#" target="_blank"><i class="fab fa-dev mb-2" title="dev"></i></a>
-                        <p class="text-body">A constructive and inclusive social network. Open source
-                            and radically
-                            transparent.</p>
-                        <div class="social my-2">
-                            <a href="#" target="_blank"><i class="fab fa-twitter mx-2" title=" twitter"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-facebook-square mx-2"
-                                    title=" facebook"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-github mx-2" title=" github"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-instagram mx-2" title=" instagram"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-twitch mx-2" title=" twitch"></i></a>
-                        </div>
-                        <p class="text-muted"><small>DEV Community copyright 2016 - 2020</small></p>
-                        <p class="text-muted"><small>Built on <a href="#"
-                                    class="text-decoration-none text-link">Forem</a> —
-                                the <a href="#" class="text-decoration-none text-link">open source</a>
-                                software
-                                that powers <a href="#" class="text-decoration-none text-link">DEV</a>
-                                and other
-                                inclusive
-                                communities.</p>
-                        <p class="text-muted">Made with love and <a href="#" class="text-decoration-none text-link">Ruby
-                                on Rails</a>.</small></p>
-                    </div>
-                    <img src="/images/footer/perezoso.png" class="Sloan position-absolute d-none d-lg-block"
-                        alt="Sloan">
-                </div>
-            </div>
-        </footer>
-    </div>
-    <!--***********AQUI TERMINA EL FOOTER***************************************************************************************************-->
+        <!--**********************************************************************************************************************************************************************-->
+        <div class="container-fluid">
+          <footer class="row">
+              <div class="container">
+                  <div class="row d-block d-md-flex flex-md-row position-relative">
+                      <div class="col-12 col-md-8 col-lg-8 footer-nav order-md-2 py-3">
+                          <a href="" class="text-decoration-none p-1">Home</a>
+                          <a href="" class="text-decoration-none p-1">Reading List</a>
+                          <a href="" class="text-decoration-none p-1">Listings</a>
+                          <a href="" class="text-decoration-none p-1">Podcast</a>
+                          <a href="" class="text-decoration-none p-1">Videos</a>
+                          <a href="" class="text-decoration-none p-1">Tags</a>
+                          <a href="" class="text-decoration-none p-1">Code of Conduct</a>
+                          <a href="" class="text-decoration-none p-1">FAQ</a>
+                          <a href="" class="text-decoration-none p-1">DEV Shops</a>
+                          <a href="" class="text-decoration-none p-1">Sponsors</a>
+                          <a href="" class="text-decoration-none p-1">About</a>
+                          <a href="" class="text-decoration-none p-1">Privacy Policy</a>
+                          <a href="" class="text-decoration-none p-1">Term of use</a>
+                          <a href="" class="text-decoration-none p-1">Contact</a>
+                          <a href="" class="text-decoration-none p-1 font-weight-bold">Write a post</a>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-4 d-block order-md-1 py-3">
+                          <a href="#" target="_blank"><i class="fab fa-dev mb-2" title="dev"></i></a>
+                          <p class="text-body">A constructive and inclusive social network. Open source
+                              and radically
+                              transparent.</p>
+                          <div class="social my-2">
+                              <a href="#" target="_blank"><i class="fab fa-twitter mx-2" title=" twitter"></i></a>
+                              <a href="#" target="_blank"><i class="fab fa-facebook-square mx-2"
+                                      title=" facebook"></i></a>
+                              <a href="#" target="_blank"><i class="fab fa-github mx-2" title=" github"></i></a>
+                              <a href="#" target="_blank"><i class="fab fa-instagram mx-2" title=" instagram"></i></a>
+                              <a href="#" target="_blank"><i class="fab fa-twitch mx-2" title=" twitch"></i></a>
+                          </div>
+                          <p class="text-muted"><small>DEV Community copyright 2016 - 2020</small></p>
+                          <p class="text-muted"><small>Built on <a href="#"
+                                      class="text-decoration-none text-link">Forem</a> —
+                                  the <a href="#" class="text-decoration-none text-link">open source</a>
+                                  software
+                                  that powers <a href="#" class="text-decoration-none text-link">DEV</a>
+                                  and other
+                                  inclusive
+                                  communities.</p>
+                          <p class="text-muted">Made with love and <a href="#"
+                                  class="text-decoration-none text-link">Ruby
+                                  on Rails</a>.</small></p>
+                      </div>
+                      <img src="/images/footer/perezoso.png" class="Sloan position-absolute d-none d-lg-block"
+                          alt="Sloan">
+                  </div>
+              </div>
+          </footer>
+      </div>
+      <!--***********AQUI TERMINA EL FOOTER***************************************************************************************************-->
+
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -266,8 +199,7 @@
     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
     crossorigin="anonymous"></script>
   <!-- <script src="js/write-itzi.js"></script> -->
-  <script src="js/write-vero.js"></script>
-  <script src="js/write-carlos.js"></script>
+  <script src="js/reading-list.js"></script>
 </body>
 
 </html>
