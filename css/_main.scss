@@ -273,7 +273,7 @@ a:hover {
   //read 15 min
   .h6i {
     
-    font-size: 50px;
+    font-size: 20px;
     vertical-align: middle;
   
   }
@@ -450,17 +450,34 @@ a:hover {
   .etimain {
     .eti1 {
       color: $base-70;
+      font-size: 15px;
     }
-  
+    .eti1:hover{
+      color:black;
+    }
+
+      
     .eti2 {
       color: $base-70;
+      font-size: 15px;
     }
+
+    .eti2:hover{
+      color:black;
+    }
+
   
     .eti3 {
       color: $base-70;
+      font-size: 15px;
       
      
     }
+
+    .eti3:hover{
+      color:black;
+    }
+
   
     .eti4 {
       color:$base-70;
@@ -468,8 +485,18 @@ a:hover {
       
     }
 
+    .eti4:hover{
+      color:black;
+    }
+
+
     .eti44 {
-      font-size: 20;
+      font-size: 20px;
+      color:black
+    }
+
+    .eti44:hover{
+      color:$color-textlink;
     }
 
   }
@@ -480,12 +507,13 @@ a:hover {
       //botones de reactions y comments
   
       font-size: 14px;
-      background-color: pink;
+      background-color:none;
       border: none;
+ 
+    }
 
-
-      
-  
+    .boton1:hover{
+      background-color:$base-10;
     }
   
     .botonsave {
@@ -591,6 +619,11 @@ a:hover {
   margin-left: 20px;   
 
 }
+}
+
+#minutes {
+font-size:12px;
+padding: 9000000;
 }
 
 

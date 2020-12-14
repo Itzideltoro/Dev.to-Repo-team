@@ -169,13 +169,13 @@ const fillDataToCards = (object, i, filter) => {
                             <div class="container botonesm1 d-flex mr-4 mb-3">
                                 <div class="col-6 p-0">
                                     <button type="button" class="margin1 boton1 mr-2 btn btn-light">12
-                                        </button>
+                                    <i class="far fa-heart"></i> </button>
                                     <button type="button" class="margin1 boton1 btn btn-light ">3
-                                        </button>
+                                    <i class="far fa-comment"></i></button>
                                 </div>
                                 <div class="col-6 d-flex justify-content-end p-0">
                                     <div>
-                                        <span class="h6i mr-2 align-middle">15 min read</span>
+                                        <span class="h6i mr-2 align-middle" id="minutes" >15 min read</span>
                                     </div>
                                     <button type="button"
                                         class="botonsave btn btn-outline-secondary" data-entry-key=${key}>Save</button>

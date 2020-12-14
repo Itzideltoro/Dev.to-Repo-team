@@ -233,7 +233,7 @@ a:hover {
 }
 
 .h6i {
-  font-size: 50px;
+  font-size: 20px;
   vertical-align: middle;
 }
 
@@ -368,28 +368,56 @@ a:hover {
 
 .etimain .eti1 {
   color: #4d5760;
+  font-size: 15px;
+}
+
+.etimain .eti1:hover {
+  color: black;
 }
 
 .etimain .eti2 {
   color: #4d5760;
+  font-size: 15px;
+}
+
+.etimain .eti2:hover {
+  color: black;
 }
 
 .etimain .eti3 {
   color: #4d5760;
+  font-size: 15px;
+}
+
+.etimain .eti3:hover {
+  color: black;
 }
 
 .etimain .eti4 {
   color: #4d5760;
 }
 
+.etimain .eti4:hover {
+  color: black;
+}
+
 .etimain .eti44 {
-  font-size: 20;
+  font-size: 20px;
+  color: black;
+}
+
+.etimain .eti44:hover {
+  color: #3b49df;
 }
 
 .botonesm1 .boton1 {
   font-size: 14px;
-  background-color: pink;
+  background-color: none;
   border: none;
+}
+
+.botonesm1 .boton1:hover {
+  background-color: #eef0f1;
 }
 
 .botonesm1 .botonsave {
@@ -457,6 +485,11 @@ a:hover {
   .paddnga2 {
     margin-left: 20px;
   }
+}
+
+#minutes {
+  font-size: 12px;
+  padding: 9000000;
 }
 
 .nav-top {
