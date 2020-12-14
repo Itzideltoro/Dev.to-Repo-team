@@ -491,13 +491,23 @@ a:hover {
 
 
     .eti44 {
-      font-size: 20px;
+      font-size: 25px;
       color:black
+
     }
 
     .eti44:hover{
       color:$color-textlink;
     }
+
+    .eti44 {
+      @media (min-width: 1220px) {
+        font-size:35px;   
+      
+      }
+    }
+
+  
 
   }
   
@@ -606,6 +616,21 @@ a:hover {
     padding-left:8px;
     padding-right:8px;
     border-radius: 5%;
+    
+
+
+
+    @media (min-width: 1200px) {
+      margin-left: 30px;   
+    
+    }
+
+
+}
+
+.form-group2 {
+  margin-right: -60px;
+
 }
 
 
@@ -621,6 +646,7 @@ a:hover {
   border-radius: 5%;
 
 }
+
 
 
 

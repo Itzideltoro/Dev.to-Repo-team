@@ -402,12 +402,18 @@ a:hover {
 }
 
 .etimain .eti44 {
-  font-size: 20px;
+  font-size: 25px;
   color: black;
 }
 
 .etimain .eti44:hover {
   color: #3b49df;
+}
+
+@media (min-width: 1220px) {
+  .etimain .eti44 {
+    font-size: 35px;
+  }
 }
 
 .botonesm1 .boton1 {
@@ -480,6 +486,16 @@ a:hover {
   padding-left: 8px;
   padding-right: 8px;
   border-radius: 5%;
+}
+
+@media (min-width: 1200px) {
+  .navinternoi li {
+    margin-left: 30px;
+  }
+}
+
+.form-group2 {
+  margin-right: -60px;
 }
 
 .navinternoi li:hover {
@@ -1165,6 +1181,11 @@ nav .btnnav .navbarmargen {
   .iURL, .itag, .idate {
     font-size: medium;
   }
+}
+
+.botonsw:hover {
+  background: #d8dcfe;
+  color: #1827ce;
 }
 
 .imag-user2w {
