@@ -363,7 +363,7 @@ a:hover {
 }
 
 .margn1 {
-  margin-left: 46px;
+  margin-left: 20px;
 }
 
 .etimain .eti1 {
@@ -384,7 +384,7 @@ a:hover {
 
 .botonesm1 .boton1 {
   font-size: 14px;
-  background-color: white;
+  background-color: pink;
   border: none;
 }
 
@@ -1131,6 +1131,12 @@ nav .btnnav .navbarmargen {
   }
   .iURL, .itag, .idate {
     font-size: medium;
+  }
+}
+
+@media (maxn-width: 320px) {
+  .paddnga2 {
+    background: pink;
   }
 }
 

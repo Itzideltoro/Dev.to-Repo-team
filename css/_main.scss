@@ -441,7 +441,7 @@ a:hover {
   }
   
   .margn1 {
-    margin-left: 46px;
+    margin-left: 20px;
   }
   
   
@@ -468,10 +468,13 @@ a:hover {
   .botonesm1 {
   
     .boton1 {
+      //botones de reactions y comments
   
       font-size: 14px;
-      background-color: white;
+      background-color: pink;
       border: none;
+
+
       
   
     }
@@ -481,6 +484,8 @@ a:hover {
       background-color:$base-20;
       border: none;
       color:$base-90;
+    
+      
   
     }
   
@@ -488,6 +493,7 @@ a:hover {
   
   
   .h6i {
+    //15 min read
     
     font-size: 12px;
     vertical-align: middle;
@@ -563,6 +569,17 @@ a:hover {
   border-radius: 5%;
 
 }
+
+
+
+//aside 2 padding 
+
+.paddnga2 {
+
+ 
+
+}
+
 
 
 

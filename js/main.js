@@ -169,9 +169,9 @@ const fillDataToCards = (object, i, filter) => {
                             <div class="container botonesm1 d-flex mr-4 mb-3">
                                 <div class="col-6 p-0">
                                     <button type="button" class="margin1 boton1 mr-2 btn btn-light">12
-                                        reactions</button>
+                                        </button>
                                     <button type="button" class="margin1 boton1 btn btn-light ">3
-                                        comments</button>
+                                        </button>
                                 </div>
                                 <div class="col-6 d-flex justify-content-end p-0">
                                     <div>
