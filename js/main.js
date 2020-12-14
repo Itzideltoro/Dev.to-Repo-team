@@ -72,6 +72,7 @@ const getTheJson = (origin, criteria) => {
             allPost = data
             console.log(allPost)
             gettingToCriteria(allPost, origin, criteria)
+           
 
         },
         error: error => {
@@ -127,15 +128,15 @@ const fillDataToCards = (object, i, filter) => {
             </div>`
     i === 0 && filter != "scroll" ? firstPost : firstPost = ""
     let newCard = `
-            <section class="card rounded main-noticia>
+            <section class="card rounded main-noticia mt-2">
                 ${firstPost}
                 <!-- aqui termina la imagen principal -->
                 <!-- aqui empieza el usuario e imagen de usuario, nombre y fecha -->
                 <div class="container bg-white">
                     <div class="row">
-                        <div class="col mt-3">
+                        <div class="col mt-3 mb-1">
                             <a class="htext hover d-flex">
-                                <img class="imag-user3 img-fluid rounded-circle" src="https://picsum.photos/id/${i}/200/" alt="" />
+                                <img class="imag-user3 img-fluid rounded-circle ml-2" src="https://picsum.photos/id/${i}/200/" alt="" />
                                 <div class="etimain mb-1 ml-2">
                                     <h6 class="eti4 mb-0">${username}</h6>
                                     <span class="eti3">${datetime}</span>
@@ -284,7 +285,6 @@ $(window).scroll(function () {
 
 ////--------------------------------------------INSTRUCCIONES INICIALES--------------------------------------------
 getTheJson("main", "")
-//getReadingPost()
 
 
 
