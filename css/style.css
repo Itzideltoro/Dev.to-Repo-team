@@ -1207,8 +1207,18 @@ ul {
   list-style: none;
 }
 
-h1 .crayons-title {
-  font-size: var(--fs-3xl);
+.crayons-title {
+  font-size: 1.875rem;
+}
+
+.crayons-title {
+  color: #08090a;
+  font-size: 1.5rem;
+}
+
+.crayons-title, .crayons-subtitle-1, .crayons-subtitle-2, .crayons-subtitle-3 {
+  font-weight: 700;
+  color: #202428;
 }
 
 #mainbg {
