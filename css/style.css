@@ -441,14 +441,11 @@ a:hover {
   background-color: #d2d6db;
   border: none;
   color: #202428;
+  margin-right: 2px;
 }
 
 .botonesm1 .botonsave:hover {
   background-color: #64707D;
-}
-
-.h6i {
-  font-size: 12px;
 }
 
 .imag-logo {
