@@ -177,7 +177,7 @@ const fillDataToCards = (object, i, filter) => {
                                 </div>
                                 <div class="col-6 d-flex justify-content-end ml-5 ">
                                     <div>
-                                        <span class="h6i mr-2 align-middle" id="minutes" >15 min read</span>
+                                        <span class="h6i mr-2" id="minutes" >15 min read</span>
                                     </div>
                                     <button type="button"
                                         class="botonsave btn btn-outline-secondary" data-entry-key=${key}>Save</button>
